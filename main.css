@@ -7,11 +7,20 @@ body {
   position: relative;
 }
 
+/*The youtube video */
+
+ #mission {
+	position: relative;
+	left: 33%;
+	top: 250px;
+}
+
+
 /* Initial menu #B71427 - red color*/
 .menu {
   background:#ED6639;
-  top: -55px;  /* start off behind the scenes */
-  height: 55px;
+  top: -50px;  /* start off behind the scenes */
+  height: 50px;
   position: fixed;
   width: 100%;
 }
