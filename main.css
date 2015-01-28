@@ -9,7 +9,7 @@ body {
 
 /*The youtube video */
 
-.mission{
+ #mission {
 	position: relative;
 	left: 33%;
 	top: 250px;
