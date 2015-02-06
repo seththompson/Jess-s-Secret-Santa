@@ -8,21 +8,10 @@ body {
 }
 
 /*The youtube video */
-
- #mission {
+#player {
 	position: relative;
 	left: 33%;
 	top: 250px;
-}
-
-
-/* Initial menu #B71427 - red color*/
-.menu {
-  background:#ED6639;
-  top: -50px;  /* start off behind the scenes */
-  height: 50px;
-  position: fixed;
-  width: 100%;
 }
 
 /* Basic styling */
@@ -34,32 +23,6 @@ body {
      -moz-background-size: cover;
       /* -o-background-size: cover; */
   
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-
-  border-right: 2px solid #F6F6F6;
-  height: 40px;
-  width: 33%; 
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  display: inline-block;
-  list-style-type: none;
-  padding: 10px 20 px;
-}
-
-.menu a {
-  color: black;
-  font-size: 18px;
-  font-style: bold;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .icon-close {

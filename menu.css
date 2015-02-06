@@ -1,0 +1,50 @@
+/* Initial menu #B71427 - red color*, orange ED6639*/
+.menu  {
+  background:#313145;
+  top: 0px;  /* start off behind the scenes */
+  height: 180px;
+  position: relative;
+  width: 100%;
+}
+
+.menu ul {
+	list-style: none; overflow: hidden; position: relative;
+}
+	.menu  ul li {
+		float: left; margin: 0 20px 0 0;
+	}
+		.menu ul li a {
+			display: block; width: 120px; height: 120px;
+			background-image: url(icons.png); background-repeat: no-repeat;
+		}
+			.menu  ul li:nth-child(1) a {
+				background-color: #5bb2fc;
+				background-position: 28px 28px;
+			}
+			.menu ul li:nth-child(2) a {
+				background-color: #58ebd3;
+				background-position: 28px -96px;
+			}
+			.menu ul li:nth-child(3) a {
+				background-color: #ffa659;
+				background-position: 28px -222px;
+			}
+		
+				.menu  ul li a span {
+					font: 50px "Dosis", sans-serif; text-transform: uppercase; 
+					position: absolute; left: 480px; top: 29px;
+					display: none;
+				}
+					.menu  ul li a:hover span {
+						display: block;
+					}
+				
+				.menu  ul li:nth-child(1) a span {
+					color: #5bb2fc;
+				}
+				.menu  ul li:nth-child(2) a span {
+					color: #58ebd3;
+				}
+				.menu ul li:nth-child(3) a span {
+					color: #ffa659;
+				}

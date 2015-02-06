@@ -9,7 +9,7 @@ var main = function() {
 			}, 200);
 
 			$('body').animate({
-			top: "55px"
+			top: "180px"
 			}, 200);
 		};
 	});
@@ -18,7 +18,7 @@ var main = function() {
 	$(document).keypress(function(event) {  /* Then push them back */
 		if(event.which === 099) {
 			$('.menu').animate({
-			  top: "-55px"
+			  top: "-180px"
 			}, 200);
 
 			$('body').animate({
@@ -36,4 +36,10 @@ var main = function() {
 
 };
 
-$(document).ready(main);
+
+function myFunction() {
+    var inpObj= document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    }
+} 
