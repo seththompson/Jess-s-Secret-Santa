@@ -21,7 +21,7 @@
 			
 			<ul>
 				<li>
-					<a href="#">
+					<a class= home href="Home.html">
 						<span>Home Page</span>
 					</a>
 				</li>
@@ -42,18 +42,28 @@
 	
 		</div>                                        
 		
+		
+		<!-- Main body -->
+		<div class="jumbotron"></div> 
+		
+		<!-- The Math question -->
 
-			
-		<div class="jumbotron"></div> <!-- Main body -->
-
-		<div class="ClueOne">
+		<p class="question"> |4 - 8(3 - 12)| - |5 - 11| </p> 
 	
+		<!-- Matt's Answer -->
+		<input id="clue" type="text"> 
 		
+		<!-- Button check the answer -->
+		<button class="Answer_button" type="button" onclick="myFunction()">Click!</button> 
 		
-		<input id="clue" type="text">
-		<button type="button" onclick="myFunction()">Click!</button>
-		<p id="message"></p>
+		<!-- Message appear while the answer is receives -->
+		<p id="message"></p> 
 		
+		<!-- Button go to the next problem -->
+		
+		<a href="Home.html">
+		<button id= "Next"  type ="button">Next</button> 
+		</a>
 		
 		
 		<!-- Jquery code -->
