@@ -3,3 +3,13 @@
     border: 2px solid #AA88FF;
     background-color: #F20F0F;
 }
+
+.question{
+
+  top: -180px;  /* start off behind the scenes */
+  height: 180px;
+  position: relative;
+  width: 100%;
+  background-color:#F3843E;
+  text-align: middle;
+}

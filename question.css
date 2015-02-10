@@ -1,0 +1,259 @@
+#QuestionOne {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#QuestionOne .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: small;
+  color: #333333;
+  text-align: center;
+}
+
+
+#QuestionOne .body{
+  padding: 10px 20px;
+  background:#F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+
+#QuestionOne .showOnHover{
+   display: none;	
+}
+
+#QuestionOne:hover {
+
+ border: 2px solid #B6B6B6;
+ box-shadow: 0px 0px 6px #B6B6B6;
+ background:#F2F2F3;
+ text-align: center;
+}
+
+#QuestionOne:hover .showOnHover{
+  display: inline-block;
+   text-align: center;
+ }
+
+
+#QuestionTwo{
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#QuestionTwo .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: small;
+  color: #333333;
+  text-align: center;
+}
+
+
+#QuestionTwo .body{
+  padding: 10px 20px;
+  background:#F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+
+#QuestionTwo .showOnHover{
+   display: none;	
+}
+
+#QuestionTwo:hover {
+
+ border: 2px solid #B6B6B6;
+ box-shadow: 0px 0px 6px #B6B6B6;
+ background:#F2F2F3;
+ text-align: center;
+}
+
+#QuestionTwo:hover .showOnHover{
+  display: inline-block;
+   text-align: center;
+ }
+ 
+ 
+  
+ 
+#QuestionThree {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#QuestionThree .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: small;
+  color: #333333;
+  text-align: center;
+}
+
+
+#QuestionThree .body{
+  padding: 10px 20px;
+  background:#F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+
+#QuestionThree .showOnHover{
+   display: none;	
+}
+
+#QuestionThree:hover {
+
+ border: 2px solid #B6B6B6;
+ box-shadow: 0px 0px 6px #B6B6B6;
+ background:#F2F2F3;
+ text-align: center;
+}
+
+#QuestionThree:hover .showOnHover{
+  display: inline-block;
+   text-align: center;
+ }
+
+ 
+ 
+  
+ 
+  
+ 
+#QuestionFour {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#QuestionFour .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: small;
+  color: #333333;
+  text-align: center;
+}
+
+
+#QuestionFour .body{
+  padding: 10px 20px;
+  background:#F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+
+#QuestionFour .showOnHover{
+   display: none;	
+}
+
+#QuestionFour:hover {
+
+ border: 2px solid #B6B6B6;
+ box-shadow: 0px 0px 6px #B6B6B6;
+ background:#F2F2F3;
+ text-align: center;
+}
+
+#QuestionFour:hover .showOnHover{
+  display: inline-block;
+   text-align: center;
+ }
+ 
+  
+ 
+#QuestionFive {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#QuestionFive .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: small;
+  color: #333333;
+  text-align: center;
+}
+
+
+#QuestionFive .body{
+  padding: 10px 20px;
+  background:#F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+
+#QuestionFive .showOnHover{
+   display: none;	
+}
+
+#QuestionFive:hover {
+
+ border: 2px solid #B6B6B6;
+ box-shadow: 0px 0px 6px #B6B6B6;
+ background:#F2F2F3;
+ text-align: center;
+}
+
+#QuestionFive:hover .showOnHover{
+  display: inline-block;
+   text-align: center;
+ }
+
+#Hint {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+	display: None;
+}
+
+#Hint .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: Lage;
+  color: #333333;
+  text-align: center;
+}
+
+
+#Hint .body{
+  padding: 10px 20px;
+  background:#F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+

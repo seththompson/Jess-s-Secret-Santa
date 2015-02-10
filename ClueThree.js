@@ -1,24 +1,31 @@
 
-function myFunction() {
+function hide(){
 
-    var message, x, answer, button;
-    message = document.getElementById("message");
+var button;
 	button = document.getElementById("Next");
-    message.innerHTML = "";
-    x = document.getElementById("clue").value;
+	
+    button.style.display = "none";
+}
 
+
+
+function myFunction() {
+	var message, x, answer, button;
+    message = document.getElementById("message");
+	message.innerHTML = "";
+	button = document.getElementById("Next");
+    x = document.getElementById("clue").value;
+	
     try { 
         x = Number(x);
-        if(x == ""){
 		
+        if(x == ""){
 		
 			$('input[type="text"]').focus(function() {
 					$(this).addClass("focus");
 			});
 			
-			button.style.display = "none";
-			
-			
+			button.style.display = "block";
 			throw "is empty";
 		}  
 		
