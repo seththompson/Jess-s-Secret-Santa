@@ -1,49 +1,100 @@
-nav ul {
+#columnOne nav ul {
 	list-style: none; overflow: hidden; position: relative;
 }
-	nav ul li {
+	#columnOne nav ul li {
 		float: left; margin: 0 20px 0 0;
 	}
-		nav ul li a {
+		#columnOne nav ul li a {
 			display: block; width: 120px; height: 120px;
-			background-image: url(icons.png); background-repeat: no-repeat;
+			background-image: url(http://s292.photobucket.com/user/jarbona/media/back-arrow_zps57e2d8ed.png.html); background-repeat: no-repeat;
 		}
-			nav ul li:nth-child(1) a {
+			#columnOne nav ul li:nth-child(1) a {
 				background-color: #1FDA9A;
-				background-position: 28px 28px;
+				background-position: 28px 28px; 
 			}
-			nav ul li:nth-child(2) a {
+			#columnOne nav ul li:nth-child(2) a {
 				background-color: #58ebd3;
 				background-position: 28px -96px;
 			}
-			nav ul li:nth-child(3) a {
+			#columnOne nav ul li:nth-child(3) a {
 				background-color: #ffa659;
 				background-position: 28px -222px;
 			}
-			nav ul li:nth-child(4) a {
+			#columnOne nav ul li:nth-child(4) a {
 				background-color: #ff7a85;
 				background-position: 28px -342px;
 			}
 		
-				nav ul li a span {
+				#columnOne nav ul li a span {
 					font: 50px "Dosis", sans-serif; text-transform: uppercase; 
 					position: absolute; left: 680px; top: 29px;
 					display: none;
 				}
-					nav ul li a:hover span {
+					#columnOne nav ul li a:hover span {
 						display: block;
 					}
 				
-				nav ul li:nth-child(1) a span {
+				#columnOne nav ul li:nth-child(1) a span {
 					color: #1FDA9A;
 				}
-				nav ul li:nth-child(2) a span {
+				#columnOne nav ul li:nth-child(2) a span {
 					color: #58ebd3;
 				}
-				nav ul li:nth-child(3) a span {
+				#columnOne nav ul li:nth-child(3) a span {
 					color: #ffa659;
 				}
-				nav ul li:nth-child(4) a span {
+				#columnOne nav ul li:nth-child(4) a span {
+					color: #ff7a85;
+				}
+					
+					
+					
+#columnTwo nav ul {
+	list-style: none; overflow: hidden; position: relative;
+}
+	#columnTwo  nav ul li {
+		float: left; margin: 0 20px 0 0;
+	}
+		#columnTwo  nav ul li a {
+			display: block; width: 120px; height: 120px;
+			background-image: url(http://s292.photobucket.com/user/jarbona/media/back-arrow_zps57e2d8ed.png.html); background-repeat: no-repeat;
+		}
+			#columnTwo  nav ul li:nth-child(1) a {
+				background-color: #1FDA9A;
+				background-position: 28px 28px; 
+			}
+			#columnTwo  nav ul li:nth-child(2) a {
+				background-color: #58ebd3;
+				background-position: 28px -96px;
+			}
+			#columnTwo  nav ul li:nth-child(3) a {
+				background-color: #ffa659;
+				background-position: 28px -222px;
+			}
+			#columnTwo nav ul li:nth-child(4) a {
+				background-color: #ff7a85;
+				background-position: 28px -342px;
+			}
+		
+				#columnTwo  nav ul li a span {
+					font: 50px "Dosis", sans-serif; text-transform: uppercase; 
+					position: absolute; left: 680px; top: 29px;
+					display: none;
+				}
+					#columnTwo  nav ul li a:hover span {
+						display: block;
+					}
+				
+				#columnTwo  nav ul li:nth-child(1) a span {
+					color: #1FDA9A;
+				}
+				#columnTwo  nav ul li:nth-child(2) a span {
+					color: #58ebd3;
+				}
+				#columnTwo  nav ul li:nth-child(3) a span {
+					color: #ffa659;
+				}
+				#columnTwo  nav ul li:nth-child(4) a span {
 					color: #ff7a85;
 				}
 					
