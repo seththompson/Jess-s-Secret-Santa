@@ -1,7 +1,7 @@
 /* Initial menu #B71427 - red color*, orange ED6639*/
 .menu  {
   background:#313145;
-  top: 0px;  /* start off behind the scenes */
+  top: -195px;  /* start off behind the scenes */
   height: 180px;
   position: relative;
   width: 100%;
