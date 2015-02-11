@@ -5,36 +5,29 @@ var main = function() {
 		if(event.which === 115) {
 	
 			$('.menu').animate({
-			top: "0px"
+			top: "-16px"
 			}, 200);
 
 			$('body').animate({
-			top: "180px"
+			top: "0px"
 			}, 200);
 		};
-	});
-	
-	  
-	$(document).keypress(function(event) {  /* Then push them back */
-		if(event.which === 099) {
+
+    if(event.which === 099) {
 			$('.menu').animate({
-			  top: "-180px"
+			  top: "-200px"
 			}, 200);
 
 			$('body').animate({
 			  top: "0px"
 			}, 200);
 		};
-	});
-	
-	$(document).keypress(function(event) {  /* Then push them back */
-		if(event.which === 104) {
+
+    if(event.which === 104) {
 			alert("Press 's' to Start & 'c' to Close");
 		};
 	});
-
-
-};
+}
 
 
 function myFunction() {
@@ -43,3 +36,5 @@ function myFunction() {
         document.getElementById("demo").innerHTML = inpObj.validationMessage;
     }
 } 
+
+$(document).ready(main);
