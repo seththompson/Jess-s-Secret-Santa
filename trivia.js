@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse)
 {
   var answer, message,response;
@@ -40,6 +39,32 @@ function adrianFour()
 function adrianFive()
 {
   checkAnswer("infrastructure engineering","Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
+}
+
+
+function bevOne()
+{
+  checkAnswer("wales","Question1","message1","Congrats!!!!!","YOU GOT IT RIGHT! Nah, I am joking is wrong");
+}
+
+function bevTwo()
+{
+  checkAnswer("super bowl","Question2","message2","Congrats!!!!!","HOW CAN YOU FORGET! You are Camilla Godfather!!");
+}
+
+function bevThree()
+{
+  checkAnswer("beast","Question3","message3","Congrats!!!!!","I am surprised you got this wrong. You should be calling her that. Its that good.");
+}
+
+function bevFour()
+{
+  checkAnswer("three","Question4","message4","Congrats!!!!!","Hint! You need more than two hands to count them");
+}
+
+function bevFive()
+{
+  checkAnswer("utah","Question5","message5","Congrats!!!!!","Hint! Its out of the country");
 }
 
 var t_r_answer = 0;
