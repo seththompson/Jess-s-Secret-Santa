@@ -192,6 +192,30 @@ function samanthaFive()
   checkAnswer("one year","Question5","message5","Congrats!!!!!","This year she got it on time!!!");
 }
 
+function sethOne()
+{
+  checkAnswer("baby ruth","Question1","message1","Congrats!!!!!!!!!","It is literraly the best candy bar ever, why you got this wrong?");
+}
+
+function sethTwo()
+{
+  checkAnswer("grapefruit","Question2","message2","Congrats!!!!!","Eh! There is better fruit out there. Seth have an okay taste.");
+}
+
+function sethThree()
+{
+  checkAnswer("twenty five","Question3","message3","Congrats!!!!!","Hint! More than anyone else in this group. or I am lying?");
+}
+
+function sethFour()
+{
+  checkAnswer("40","Question4","message4","Congrats!!!!!","So many good horror movie, so little time. You should take a break and see one");
+}
+
+function sethFive()
+{
+  checkAnswer("333","Question5","message5","Congrats!!!!!","Do you think he ever sleep? I think, he just constantly watching movies. While he works, sleep, exercise, it never stop");
+}
 var t_r_answer = 0;
 
 function displayResult(){
