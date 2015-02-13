@@ -167,6 +167,30 @@ function mikeFive()
   checkAnswer("kicker of elves","Question5","message5","Congrats!!!!!","Yikes! Another hard question");
 }
 
+function samanthaOne()
+{
+  checkAnswer("sloth","Question1","message1","Congrats!!!!!!!!!","Yikes! If you got this wrong, you better just give up ");
+}
+
+function samanthaTwo()
+{
+  checkAnswer("cheese carbs hotdog","Question2","message2","Congrats!!!!!","I will admit this one is hard");
+}
+
+function samanthaThree()
+{
+  checkAnswer("link","Question3","message3","Congrats!!!!!","Obviously I am the better friend because I know this");
+}
+
+function samanthaFour()
+{
+  checkAnswer("brown","Question4","message4","Congrats!!!!!","I remember the day I was crushed when I found out she wasn't a true ginger. ");
+}
+
+function samanthaFive()
+{
+  checkAnswer("one year","Question5","message5","Congrats!!!!!","This year she got it on time!!!");
+}
 
 var t_r_answer = 0;
 
