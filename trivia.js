@@ -1,3 +1,46 @@
+function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse)
+{
+  var answer, message,response;
+  answer = document.getElementById(answerID).value;
+  message = document.getElementById(messageID);
+	message.innerHTML = "";
+  if(answer == correctAnswer)
+  {
+    response = correctResponse;
+  }
+  else
+  {
+    response = incorrectResponse;
+  }
+  message.innerHTML = response;
+
+}
+
+function adrianOne()
+{
+  checkAnswer("jackie chan","Question1","message1","Congrats!!!!!","YOU SUCK!!!!!");
+}
+
+function adrianTwo()
+{
+  checkAnswer("fabian","Question2","message2","Congrats!!!!!","YOU SUCK!!!!!");
+}
+
+function adrianThree()
+{
+  checkAnswer("the ferrari","Question3","message3","Congrats!!!!!","DON'T FORGET THE ARTICLE YOU DWEEB");
+}
+
+function adrianFour()
+{
+  checkAnswer("after earth","Question4","message4","Congrats!!!!!","OPPOSITE OF BEFORE PLUTO (STILL A PLANET)");
+}
+
+function adrianFive()
+{
+  checkAnswer("infrastructure engineering","Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
+}
+
 function myFunction() {
 	var message1,message2,message3,message4, message5, x1, x2, x3, x4, x5, sum;
     message1 = document.getElementById("message1");
