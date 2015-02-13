@@ -12,7 +12,7 @@
 			<link href="menu.css" rel="stylesheet" type="text/css"/>
 			
 			<!-- button CSS -->
-			<link href="ClueThree_css.css" rel="stylesheet" type="text/css"/>
+			<link href="ClueThree.css" rel="stylesheet" type="text/css"/>
 	</head>
 
 	<body onload="hide()" style="overflow:scroll;">
@@ -47,24 +47,34 @@
 		<div class="jumbotron"></div> 
 		
 		<!-- The Math question -->
-
-		<div class=question>
-			<p> |4 - 8(3 - 12)| - |5 - 11| </p> 
+		
+		<div id ="QuestionOne">
+			<div class = "heading">
+				
+				<h1> Question #1 </h1>
+			
+			</div>
+			
+			<div class = "body">
+			
+				<img></img>
+				
+				<input id="Answer_1" type="text"> <!-- Matt's Answer -->
+				<button class="Answer_button" type="button" onclick="myFunction()">Click!</button> <!-- Button check the answer -->
+				<p id="message"></p> <!-- Message appear while the answer is receives -->
+				
+			</div>
 		</div>
+
 	
-		<!-- Matt's Answer -->
-		<input id="clue" type="text"> 
 		
-		<!-- Button check the answer -->
-		<button class="Answer_button" type="button" onclick="myFunction()">Click!</button> 
-		
-		<!-- Message appear while the answer is receives -->
-		<p id="message"></p> 
 		
 		<!-- Button go to the next problem -->
 		
-		<a href="Home.html">
-		<button id= "Next"  type ="button">Next</button> 
+		<a id = Button1 href="Home.html">
+		
+			<button id= "Next"  type ="button">Next</button> 
+		
 		</a>
 		
 		
