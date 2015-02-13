@@ -142,6 +142,31 @@ function justinFive()
   checkAnswer("u","Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?");
 }
 
+function mikeOne()
+{
+  checkAnswer("carrot cake","Question1","message1","Congrats!!!!!!!!!","We should tell Samantha to make bananna cake!");
+}
+
+function mikeTwo()
+{
+  checkAnswer("woodhollow","Question2","message2","Congrats!!!!!","Apparently he actually lived in a apartment complex.");
+}
+
+function mikeThree()
+{
+  checkAnswer("wendy","Question3","message3","Congrats!!!!!","They will get marry one day!");
+}
+
+function mikeFour()
+{
+  checkAnswer("bloody rabbit","Question4","message4","Congrats!!!!!","This was hilarious!");
+}
+
+function mikeFive()
+{
+  checkAnswer("kicker of elves","Question5","message5","Congrats!!!!!","Yikes! Another hard question");
+}
+
 
 var t_r_answer = 0;
 
