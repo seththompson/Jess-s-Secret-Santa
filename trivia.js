@@ -92,6 +92,30 @@ function chrisFive()
   checkAnswer("jennifer lawrence","Question5","message5","Congrats!!!!!","bau chica wau wau");
 }
 
+function evanOne()
+{
+  checkAnswer("arabella","Question1","message1","Congrats!!!!!!!!!","Come on Matt, what cat name I am thinking?");
+}
+
+function evanTwo()
+{
+  checkAnswer("one","Question2","message2","Congrats!!!!!","Wait isn't he a bass player?");
+}
+
+function evanThree()
+{
+  checkAnswer("twenty three november","Question3","message3","Congrats!!!!!","If he only was a girl, he wouldn't gotten that ticket");
+}
+
+function evanFour()
+{
+  checkAnswer("803","Question4","message4","Congrats!!!!!","You are so close!!!!");
+}
+
+function evanFive()
+{
+  checkAnswer("1000","Question5","message5","Congrats!!!!!","This is embarrassing");
+}
 
 
 var t_r_answer = 0;
@@ -846,7 +870,7 @@ function myFunction8() {
 	
 	}
 	
-	if(x3 == 'Twenty three november'){
+	if(x3 == 'twenty three november'){
 	
 		message3.innerHTML ="Congrats 3!!!!";
 		sum = sum +1;
