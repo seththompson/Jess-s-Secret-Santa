@@ -67,6 +67,33 @@ function bevFive()
   checkAnswer("utah","Question5","message5","Congrats!!!!!","Hint! Its out of the country");
 }
 
+function chrisOne()
+{
+  checkAnswer("giraffe","Question1","message1","Congrats!!!!!","Come on! ITs obvious!");
+}
+
+function chrisTwo()
+{
+  checkAnswer("walmart","Question2","message2","Congrats!!!!!","Only fine man buy steak from there!");
+}
+
+function chrisThree()
+{
+  checkAnswer("fender san marino","Question3","message3","Congrats!!!!!","Good luck! ");
+}
+
+function chrisFour()
+{
+  checkAnswer("four","Question4","message4","Congrats!!!!!","Too bad you didn't attend!");
+}
+
+function chrisFive()
+{
+  checkAnswer("jennifer lawrence","Question5","message5","Congrats!!!!!","bau chica wau wau");
+}
+
+
+
 var t_r_answer = 0;
 
 function displayResult(){
