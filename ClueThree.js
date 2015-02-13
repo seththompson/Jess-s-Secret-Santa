@@ -1,52 +1,47 @@
-
-function hide(){
-
-var button;
-	button = document.getElementById("Next");
-	
-    button.style.display = "none";
-}
-
-
-
-function myFunction() {
-	var message, x, answer, button;
-    message = document.getElementById("message");
+function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse,buttonID,question)
+{
+  var answer, message,response;
+  answer = document.getElementById(answerID).value;
+  message = document.getElementById(messageID);
+  button = document.getElementById(buttonID);
 	message.innerHTML = "";
-	button = document.getElementById("Next");
-    x = document.getElementById("clue").value;
 	
-    try { 
-        x = Number(x);
-		
-        if(x == ""){
-		
-			$('input[type="text"]').focus(function() {
-					$(this).addClass("focus");
-			});
-			
-			button.style.display = "block";
-			throw "is empty";
-		}  
-		
-        if(isNaN(x)){
-		$('input[type="text"]').focus(function() {
-					$(this).removeClass("focus");
-			});
-			
-				
-			throw "is not a number";
-		} 
-        if(x > 10)   throw "is too high";
-        if(x < 5)    throw "is too low";
-    }
-    catch(err) {
-        message.innerHTML = "Input " + err;
-    }
-    finally {
-        document.getElementById("demo").value = "";
-    }
+  if(answer == correctAnswer)
+  {
+    response = correctResponse;
+	button.style.display = "block";
+  }
+  else
+  {
+	$('question').addClass('flash');
+    response = incorrectResponse;
+	
+  }
+  message.innerHTML = response;
+
 }
 
+function MathQuestionOne()
+{
+  checkAnswer("1 -2 -1","Answer_1","message_1","Congratulation you passed Algebra!!!!!","Whoa.... You are an engineer. I am not trusting anything you design","Button_1","QuestionOne");
+}
 
-	
+function MathQuestionTwo()
+{
+  checkAnswer("155","Answer_2","message_2","Congratulation you passed Geometry!!!!!","Well I bet a high school sophomore can do this","Button_2");
+}
+
+function MathQuestionThree()
+{
+  checkAnswer("2","Answer_3","message_3","Congratulation you passed Calculus!!!!!","YOU CANT HANDLE THE TRUTH","Button_3");
+}
+
+function MathQuestionFour()
+{
+  checkAnswer("e","Answer_4","message_4","Congratulation you passed Calculus III!!!!!"," Your life is like a box of chocolates. Old, stale, bland chocolate.","Button_4");
+}
+
+function MathQuestionFive()
+{
+  checkAnswer("2sin(t)","Answer_5","message_5","Congratulation you passed Differential Equation!!!!!"," work work work work work ","Button_5");
+}

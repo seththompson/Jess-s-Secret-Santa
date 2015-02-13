@@ -17,21 +17,151 @@
 }
 
 
-#QuestionOne .hint{
+#QuestionOne .body{
   padding: 10px 20px;
   background: #F2F2F3;
   text-align: center;
+  
   color: #333333;
   font-size: large;
 }
 
-
-#QuestionOne:hover span {
-  font-weight: bold;
-}
-
-#QuestionOne .Next{
+#Button_1{
 	
 	display: None;
+	left: 48%;
+	position: absolute;
+    
+	
 
+}
+
+#Button_1 .button{
+
+	background:#F9A646;
+	border: 1px solid #F9A646;
+	border-radius: 1px 1px 0px 0px;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: small;
+	color:  #F2F2F3;
+	text-align: center;
+	left:280px;
+}
+
+#Button_2{
+	
+	display: None;
+	left: 48%;
+	position: absolute;
+    
+	
+
+}
+
+#Button_2 .button{
+
+	background:#F9A646;
+	border: 1px solid #F9A646;
+	border-radius: 1px 1px 0px 0px;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: small;
+	color:  #F2F2F3;
+	text-align: center;
+	left:280px;
+}
+
+#Button_3{
+	
+	display: None;
+	left: 48%;
+	position: absolute;
+    
+	
+
+}
+
+#Button_3 .button{
+
+	background:#F9A646;
+	border: 1px solid #F9A646;
+	border-radius: 1px 1px 0px 0px;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: small;
+	color:  #F2F2F3;
+	text-align: center;
+	left:280px;
+}
+#Button_4{
+	
+	display: None;
+	left: 48%;
+	position: absolute;
+    
+	
+
+}
+
+#Button_4 .button{
+
+	background:#F9A646;
+	border: 1px solid #F9A646;
+	border-radius: 1px 1px 0px 0px;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: small;
+	color:  #F2F2F3;
+	text-align: center;
+	left:280px;
+}
+
+#Button_5{
+	
+	display: None;
+	left: 48%;
+	position: absolute;
+    
+	
+
+}
+
+#Button_5 .button{
+
+	background:#F9A646;
+	border: 1px solid #F9A646;
+	border-radius: 1px 1px 0px 0px;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: small;
+	color:  #F2F2F3;
+	text-align: center;
+	left:280px;
+}
+
+#ClueThree {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#ClueThree .heading{
+  background:#F9A646;
+  border: 1px solid #F9A646;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: Large;
+  color: #F2F2F3;
+  text-align: center;
+}
+
+#ClueThree .body{
+  padding: 10px 20px;
+  background: #F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: x-large;
 }
