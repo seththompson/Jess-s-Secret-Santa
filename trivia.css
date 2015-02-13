@@ -98,3 +98,23 @@
 					color: #ff7a85;
 				}
 					
+#result {
+		font: 50px "Dosis", sans-serif; 
+		text-transform: uppercase; 
+		position: absolute; 
+		left: 28px;
+		top: 500px;
+		color: #1FDA9A;
+		margin: 0 20px 0 0;
+	}
+	
+	
+#result2 {
+		font: 50px "Dosis", sans-serif; 
+		text-transform: uppercase; 
+		position: absolute; 
+		left: 28px;
+		top: 575px;
+		color: #ff7a85;
+		margin: 0 20px 0 0;
+	}
