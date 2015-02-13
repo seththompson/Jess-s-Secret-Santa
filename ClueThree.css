@@ -1,0 +1,37 @@
+#QuestionOne {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+
+}
+
+#QuestionOne .heading{
+  background:#EE4B3E;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: Large;
+  color: #333333;
+  text-align: center;
+}
+
+
+#QuestionOne .hint{
+  padding: 10px 20px;
+  background: #F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: large;
+}
+
+
+#QuestionOne:hover span {
+  font-weight: bold;
+}
+
+#QuestionOne .Next{
+	
+	display: None;
+
+}

@@ -22,10 +22,6 @@ var main = function() {
 			  top: "0px"
 			}, 200);
 		};
-
-    if(event.which === 104) {
-			alert("Press 's' to Start & 'c' to Close");
-		};
 	});
 }
 

@@ -1,8 +1,10 @@
 #QuestionOne {
+	top: 0%;
 	border: 1px solid #B6B6B6;
 	border-radius: 5px;
 	box-shadow: 0px 0px 4px #B6B6B6;
-	margin: 5%;
+	margin: 0% 5% 5% 5%;
+	
 
 }
 
@@ -25,10 +27,6 @@
   font-size: large;
 }
 
-#QuestionOne .showOnHover{
-   display: none;	
-}
-
 #QuestionOne:hover {
 
  border: 2px solid #B6B6B6;
@@ -37,10 +35,6 @@
  text-align: center;
 }
 
-#QuestionOne:hover .showOnHover{
-  display: inline-block;
-   text-align: center;
- }
 
 
 #QuestionTwo{
@@ -257,3 +251,8 @@
   font-size: large;
 }
 
+.congrats{
+background: yellow;
+color: color: #333333;
+
+}
