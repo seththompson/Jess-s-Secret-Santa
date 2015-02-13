@@ -117,6 +117,31 @@ function evanFive()
   checkAnswer("1000","Question5","message5","Congrats!!!!!","This is embarrassing");
 }
 
+function justinOne()
+{
+  checkAnswer("restaurant","Question1","message1","Congrats!!!!!!!!!","WRONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGg");
+}
+
+function justinTwo()
+{
+  checkAnswer("three","Question2","message2","Congrats!!!!!","Oh! The many groupme messages.");
+}
+
+function justinThree()
+{
+  checkAnswer("alabama","Question3","message3","Congrats!!!!!","You know what, I don't know what state Justin love. Wiscosine?");
+}
+
+function justinFour()
+{
+  checkAnswer("u","Question4","message4","Congrats!!!!!","I think the books is about wizards and dragon. I am like 3% sure. Trust me this is a good hint.");
+}
+
+function justinFive()
+{
+  checkAnswer("u","Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?");
+}
+
 
 var t_r_answer = 0;
 
