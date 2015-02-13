@@ -4,6 +4,12 @@
 
 	<head> 
 			<title>Secret Santa</title>
+      <script type="text/javascript" src="sessvars.js"></script>
+      <script type="text/javascript">
+      sessvars.correctCount = sessvars.correctCount||0;
+      sessvars.incorrectCount = sessvars.incorrectCount||0;
+      </script>
+
 						
 			<!-- My CSS -->
 			<link href="main.css" rel="stylesheet" type="text/css"/>
@@ -103,7 +109,8 @@
 		<div>
 				
 			<button class="Answer_button1" type="button" onclick="displayResult()">Click!</button>		
-			<p id="result"></p>
+			<p id="result" style="background-color:white">Correct: </p>
+      <p id="result2" style="background-color:white">Incorrect: </p>
 		</div>
 		<!-- Jquery code -->
 		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -113,6 +120,7 @@
 		
 		<!-- My Java Script for youtube--> 
 		<script src="trivia.js"></script>
+
 		
 	</body>
 	

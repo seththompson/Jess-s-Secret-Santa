@@ -7,10 +7,12 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
   if(answer == correctAnswer)
   {
     response = correctResponse;
+    sessvars.correctCount++;
   }
   else
   {
     response = incorrectResponse;
+    sessvars.incorrectCount++;
   }
   message.innerHTML = response;
 
@@ -222,7 +224,11 @@ function displayResult(){
 	
 	message1 = document.getElementById("result");
 	message1.innerHTML = "";
-	message1.innerHTML = t_r_answer;
+	message1.innerHTML = sessvars.correctCount;
+
+	message10 = document.getElementById("result2");
+	message10.innerHTML = "";
+	message10.innerHTML = sessvars.incorrectCount;
 
 }
 
