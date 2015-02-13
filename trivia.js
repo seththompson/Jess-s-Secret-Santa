@@ -41,7 +41,6 @@ function adrianFive()
 {
   checkAnswer("infrastructure engineering","Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
 }
-=======
 
 var t_r_answer = 0;
 
@@ -52,9 +51,6 @@ function displayResult(){
 	message1.innerHTML = t_r_answer;
 
 }
-
-
->>>>>>> 8de8edf51727168c9e0c0f720bbfe4d3b03e9fa2
 
 function myFunction() {
 
