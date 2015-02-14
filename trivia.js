@@ -32,7 +32,7 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function checkHint()
 {
-  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5 || sessvars.justinCounter >= 5 || sessvars.mikeCounter >= 5)
+  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5 || sessvars.justinCounter >= 5 || sessvars.mikeCounter >= 5 || sessvars.samanthaCounter >= 5)
 		document.getElementById("Hint").style.display="block";
 }
 
@@ -370,30 +370,55 @@ function mikeFive()
 function samanthaOne()
 {
   result = checkAnswer(["sloth","the sloth","a sloth"],"Question1","message1","Congrats!!!!!!!!!","Yikes! If you got this wrong, you better just give up ");
+  if (result == 1 && sessvars.samantha1Flag == 0)
+  {
+    sessvars.samanthaCounter++;
+    sessvars.samantha1Flag = 1;
+  }
   checkHint();
 }
 
 function samanthaTwo()
 {
   result = checkAnswer(["cheese carbs hotdog","cheese hotdog carbs","hotdog cheese carbs","hotdog carbs cheese","carbs cheese hotdog","carbs hotdog cheese","cheese, carbs, hotdog","cheese, hotdog, carbs","hotdog, cheese, carbs","hotdog, carbs, cheese","carbs, cheese, hotdog","carbs, hotdog, cheese","cheese carbs hotdogs","cheese hotdogs carbs","hotdogs cheese carbs","hotdogs carbs cheese","carbs cheese hotdogs","carbs hotdogs cheese","cheese, carbs, hotdogs","cheese, hotdogs, carbs","hotdogs, cheese, carbs","hotdogs, carbs, cheese","carbs, cheese, hotdogs","carbs, hotdogs, cheese"],"Question2","message2","Congrats!!!!!","I will admit this one is hard");
+  if (result == 1 && sessvars.samantha2Flag == 0)
+  {
+    sessvars.samanthaCounter++;
+    sessvars.samantha2Flag = 1;
+  }
   checkHint();
 }
 
 function samanthaThree()
 {
   result = checkAnswer(["link"],"Question3","message3","Congrats!!!!!","Obviously I am the better friend because I know this");
+  if (result == 1 && sessvars.samantha3Flag == 0)
+  {
+    sessvars.samanthaCounter++;
+    sessvars.samantha3Flag = 1;
+  }
   checkHint();
 }
 
 function samanthaFour()
 {
   result = checkAnswer(["brown"],"Question4","message4","Congrats!!!!!","I remember the day I was crushed when I found out she wasn't a true ginger. ");
+  if (result == 1 && sessvars.samantha4Flag == 0)
+  {
+    sessvars.samanthaCounter++;
+    sessvars.samantha4Flag = 1;
+  }
   checkHint();
 }
 
 function samanthaFive()
 {
   result = checkAnswer(["one year","1 year", "a year", "year"],"Question5","message5","Congrats!!!!!","This year she got it on time!!!");
+  if (result == 1 && sessvars.samantha5Flag == 0)
+  {
+    sessvars.samanthaCounter++;
+    sessvars.samantha5Flag = 1;
+  }
   checkHint();
 }
 
