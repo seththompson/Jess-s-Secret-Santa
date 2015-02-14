@@ -127,8 +127,8 @@
 	margin: 5%;
 	position: absolute; 
 	left: 900px;
-	top: 100px
-	display: none;
+	top: 100px;
+	
 
 }
 
@@ -176,21 +176,23 @@
 	border: 1px solid #B6B6B6;
 	border-radius: 5px;
 	box-shadow: 0px 0px 4px #B6B6B6;
-	margin: 5%;
+	margin: 3%;
 	position: absolute; 
-	left: 900px;
-	top: 100px
+	left: 28px;
+	top: 600px;
+	display: None;
 	
 }
 
 #ClueTwo .heading{
-  background:#1FDA9A;
+  background:#F9A646;
   border: 1px solid #B6B6B6;
   border-radius: 5px 5px 0px 0px;
   padding: 10px 20px;
-  font-size: Large;
-  color: #333333;
+  color: white;
   text-align: center;
+  font-size: small;
+  color: #F2F2F3;
 }
 
 
