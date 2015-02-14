@@ -47,3 +47,9 @@ body {
 .icon-menu i {
   margin-right: 5px;
 }
+
+#player {
+top: 100px;
+left:400 px;
+
+}
