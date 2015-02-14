@@ -27,7 +27,7 @@
 		
 				#columnOne nav ul li a span {
 					font: 50px "Dosis", sans-serif; text-transform: uppercase; 
-					position: absolute; left: 680px; top: 29px;
+					position: absolute; left: 600px; top: 28px;
 					display: none;
 				}
 					#columnOne nav ul li a:hover span {
@@ -78,7 +78,7 @@
 		
 				#columnTwo  nav ul li a span {
 					font: 50px "Dosis", sans-serif; text-transform: uppercase; 
-					position: absolute; left: 680px; top: 29px;
+					position: absolute; left: 600px; top: 29px;
 					display: none;
 				}
 					#columnTwo  nav ul li a:hover span {
@@ -118,3 +118,53 @@
 		color: #ff7a85;
 		margin: 0 20px 0 0;
 	}
+	
+
+#Rules {
+	border: 1px solid #B6B6B6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px #B6B6B6;
+	margin: 5%;
+	position: absolute; 
+	left: 900px;
+	top: 100px
+
+}
+
+#Rules .heading{
+  background:#1FDA9A;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 20px;
+  font-size: Large;
+  color: #333333;
+  text-align: center;
+}
+
+
+#Rules .body{
+  padding: 10px 20px;
+  background: #F2F2F3;
+  text-align: center;
+  color: #333333;
+  font-size: medium;
+}
+
+
+#Rules .rule1{
+  color: #333333;
+  font-size: large;
+  font-weight: bold;
+}
+
+#Rules .rule2{
+  color: #333333;
+  font-size: large;
+  font-weight: bold;
+}
+
+#Rules .rule3{
+  color: #333333;
+  font-size: large;
+  font-weight: bold;
+}
