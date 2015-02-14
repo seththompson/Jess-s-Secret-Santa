@@ -1,10 +1,17 @@
+var stringCheck = function checkString(string1,string2)
+{
+  return (string1.toLowerCase()==string2.toLowerCase());
+}
+
+
 function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse)
 {
   var answer, message,response;
   answer = document.getElementById(answerID).value;
   message = document.getElementById(messageID);
 	message.innerHTML = "";
-  if(answer == correctAnswer)
+  var stringCheckPartial = stringCheck.bind(undefined,answer);      // Create a partial function that will take in a string and compare it to the answer variable
+  if(correctAnswer.some(stringCheckPartial))                        // Returns true if any string in the array matches the answer var
   {
     response = correctResponse;
     sessvars.correctCount++;
@@ -20,203 +27,203 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function adrianOne()
 {
-  checkAnswer("jackie chan","Question1","message1","Congrats!!!!!","YOU SUCK!!!!!");
+  checkAnswer(["jackie chan"],"Question1","message1","Congrats!!!!!","YOU SUCK!!!!!");
 }
 
 function adrianTwo()
 {
-  checkAnswer("fabian","Question2","message2","Congrats!!!!!","YOU SUCK!!!!!");
+  checkAnswer(["fabian"],"Question2","message2","Congrats!!!!!","YOU SUCK!!!!!");
 }
 
 function adrianThree()
 {
-  checkAnswer("the ferrari","Question3","message3","Congrats!!!!!","DON'T FORGET THE ARTICLE YOU DWEEB");
+  checkAnswer(["the ferrari","ferrari"],"Question3","message3","Congrats!!!!!","VROOM VROOM BITCH");
 }
 
 function adrianFour()
 {
-  checkAnswer("after earth","Question4","message4","Congrats!!!!!","OPPOSITE OF BEFORE PLUTO (STILL A PLANET)");
+  checkAnswer(["after earth","afterearth"],"Question4","message4","Congrats!!!!!","OPPOSITE OF BEFORE PLUTO (STILL A PLANET)");
 }
 
 function adrianFive()
 {
-  checkAnswer("infrastructure engineering","Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
+  checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
 }
 
 
 function bevOne()
 {
-  checkAnswer("wales","Question1","message1","Congrats!!!!!","YOU GOT IT RIGHT! Nah, I am joking is wrong");
+  checkAnswer(["wales"],"Question1","message1","Congrats!!!!!","YOU GOT IT RIGHT! Nah, I am joking is wrong");
 }
 
 function bevTwo()
 {
-  checkAnswer("super bowl","Question2","message2","Congrats!!!!!","HOW CAN YOU FORGET! You are Camilla Godfather!!");
+  checkAnswer(["super bowl","the super bowl"],"Question2","message2","Congrats!!!!!","HOW CAN YOU FORGET! You are Camilla Godfather!!");
 }
 
 function bevThree()
 {
-  checkAnswer("beast","Question3","message3","Congrats!!!!!","I am surprised you got this wrong. You should be calling her that. Its that good.");
+  checkAnswer(["beast"],"Question3","message3","Congrats!!!!!","I am surprised you got this wrong. You should be calling her that. Its that good.");
 }
 
 function bevFour()
 {
-  checkAnswer("three","Question4","message4","Congrats!!!!!","Hint! You need more than two hands to count them");
+  checkAnswer(["three","3"],"Question4","message4","Congrats!!!!!","Hint! You need more than two hands to count them");
 }
 
 function bevFive()
 {
-  checkAnswer("utah","Question5","message5","Congrats!!!!!","Hint! Its out of the country");
+  checkAnswer(["utah"],"Question5","message5","Congrats!!!!!","Hint! Its out of the country");
 }
 
 function chrisOne()
 {
-  checkAnswer("giraffe","Question1","message1","Congrats!!!!!","Come on! ITs obvious!");
+  checkAnswer(["giraffe","a giraffe"],"Question1","message1","Congrats!!!!!","Come on! ITs obvious!");
 }
 
 function chrisTwo()
 {
-  checkAnswer("walmart","Question2","message2","Congrats!!!!!","Only fine man buy steak from there!");
+  checkAnswer(["walmart"],"Question2","message2","Congrats!!!!!","Only fine man buy steak from there!");
 }
 
 function chrisThree()
 {
-  checkAnswer("fender san marino","Question3","message3","Congrats!!!!!","Good luck! ");
+  checkAnswer(["fender san marino","a fender san marino", "fender", "a fender"],"Question3","message3","Congrats!!!!!","Good luck! ");
 }
 
 function chrisFour()
 {
-  checkAnswer("four","Question4","message4","Congrats!!!!!","Too bad you didn't attend!");
+  checkAnswer(["four","4"],"Question4","message4","Congrats!!!!!","Too bad you didn't attend!");
 }
 
 function chrisFive()
 {
-  checkAnswer("jennifer lawrence","Question5","message5","Congrats!!!!!","bau chica wau wau");
+  checkAnswer(["jennifer lawrence","jlaw","j law",],"Question5","message5","Congrats!!!!!","bau chica wau wau");
 }
 
 function evanOne()
 {
-  checkAnswer("arabella","Question1","message1","Congrats!!!!!!!!!","Come on Matt, what cat name I am thinking?");
+  checkAnswer(["arabella"],"Question1","message1","Congrats!!!!!!!!!","Come on Matt, what cat name I am thinking?");
 }
 
 function evanTwo()
 {
-  checkAnswer("one","Question2","message2","Congrats!!!!!","Wait isn't he a bass player?");
+  checkAnswer(["one","1"],"Question2","message2","Congrats!!!!!","Wait isn't he a bass player?");
 }
 
 function evanThree()
 {
-  checkAnswer("twenty three november","Question3","message3","Congrats!!!!!","If he only was a girl, he wouldn't gotten that ticket");
+  checkAnswer(["twenty three november","Nov 23","Nov 23rd", "November 23", "November 23rd", "23 Nov", "23 November","twenty-third Nov", "twenty third November","twenty-three november","twenty-three Nov","twenty three nov","11/23","11-23"],"Question3","message3","Congrats!!!!!","If he only was a girl, he wouldn't gotten that ticket");
 }
 
 function evanFour()
 {
-  checkAnswer("803","Question4","message4","Congrats!!!!!","You are so close!!!!");
+  checkAnswer(["803","eight hundred and three","eight hundred three"],"Question4","message4","Congrats!!!!!","You are so close!!!!");
 }
 
 function evanFive()
 {
-  checkAnswer("1000","Question5","message5","Congrats!!!!!","This is embarrassing");
+  checkAnswer(["1000","one thousand","a thousand","thousand","one-thousand"],"Question5","message5","Congrats!!!!!","This is embarrassing");
 }
 
 function justinOne()
 {
-  checkAnswer("restaurant","Question1","message1","Congrats!!!!!!!!!","WRONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGg");
+  checkAnswer(["restaurant","a restaurant"],"Question1","message1","Congrats!!!!!!!!!","WRONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGg");
 }
 
 function justinTwo()
 {
-  checkAnswer("three","Question2","message2","Congrats!!!!!","Oh! The many groupme messages.");
+  checkAnswer(["three","3"],"Question2","message2","Congrats!!!!!","Oh! The many groupme messages.");
 }
 
 function justinThree()
 {
-  checkAnswer("alabama","Question3","message3","Congrats!!!!!","You know what, I don't know what state Justin love. Wiscosine?");
+  checkAnswer(["alabama","state of alabama","the state of alabama"],"Question3","message3","Congrats!!!!!","You know what, I don't know what state Justin love. Wiscosine?");
 }
 
 function justinFour()
 {
-  checkAnswer("u","Question4","message4","Congrats!!!!!","I think the books is about wizards and dragon. I am like 3% sure. Trust me this is a good hint.");
+  checkAnswer(["u"],"Question4","message4","Congrats!!!!!","I think the books is about wizards and dragon. I am like 3% sure. Trust me this is a good hint.");
 }
 
 function justinFive()
 {
-  checkAnswer("u","Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?");
+  checkAnswer(["u"],"Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?");
 }
 
 function mikeOne()
 {
-  checkAnswer("carrot cake","Question1","message1","Congrats!!!!!!!!!","We should tell Samantha to make bananna cake!");
+  checkAnswer(["carrot cake"],"Question1","message1","Congrats!!!!!!!!!","We should tell Samantha to make bananna cake!");
 }
 
 function mikeTwo()
 {
-  checkAnswer("woodhollow","Question2","message2","Congrats!!!!!","Apparently he actually lived in a apartment complex.");
+  checkAnswer(["woodhollow","wood hollow"],"Question2","message2","Congrats!!!!!","Apparently he actually lived in a apartment complex.");
 }
 
 function mikeThree()
 {
-  checkAnswer("wendy","Question3","message3","Congrats!!!!!","They will get marry one day!");
+  checkAnswer(["wendy","wendys","wendy's"],"Question3","message3","Congrats!!!!!","They will get marry one day!");
 }
 
 function mikeFour()
 {
-  checkAnswer("bloody rabbit","Question4","message4","Congrats!!!!!","This was hilarious!");
+  checkAnswer(["bloody rabbit","a bloody rabbit","rabbit from monty python and the holy grail", "the rabbit from monty python and the holy grail"],"Question4","message4","Congrats!!!!!","This was hilarious!");
 }
 
 function mikeFive()
 {
-  checkAnswer("kicker of elves","Question5","message5","Congrats!!!!!","Yikes! Another hard question");
+  checkAnswer(["kicker of elves"],"Question5","message5","Congrats!!!!!","Yikes! Another hard question");
 }
 
 function samanthaOne()
 {
-  checkAnswer("sloth","Question1","message1","Congrats!!!!!!!!!","Yikes! If you got this wrong, you better just give up ");
+  checkAnswer(["sloth","the sloth","a sloth"],"Question1","message1","Congrats!!!!!!!!!","Yikes! If you got this wrong, you better just give up ");
 }
 
 function samanthaTwo()
 {
-  checkAnswer("cheese carbs hotdog","Question2","message2","Congrats!!!!!","I will admit this one is hard");
+  checkAnswer(["cheese carbs hotdog","cheese hotdog carbs","hotdog cheese carbs","hotdog carbs cheese","carbs cheese hotdog","carbs hotdog cheese","cheese, carbs, hotdog","cheese, hotdog, carbs","hotdog, cheese, carbs","hotdog, carbs, cheese","carbs, cheese, hotdog","carbs, hotdog, cheese","cheese carbs hotdogs","cheese hotdogs carbs","hotdogs cheese carbs","hotdogs carbs cheese","carbs cheese hotdogs","carbs hotdogs cheese","cheese, carbs, hotdogs","cheese, hotdogs, carbs","hotdogs, cheese, carbs","hotdogs, carbs, cheese","carbs, cheese, hotdogs","carbs, hotdogs, cheese"],"Question2","message2","Congrats!!!!!","I will admit this one is hard");
 }
 
 function samanthaThree()
 {
-  checkAnswer("link","Question3","message3","Congrats!!!!!","Obviously I am the better friend because I know this");
+  checkAnswer(["link"],"Question3","message3","Congrats!!!!!","Obviously I am the better friend because I know this");
 }
 
 function samanthaFour()
 {
-  checkAnswer("brown","Question4","message4","Congrats!!!!!","I remember the day I was crushed when I found out she wasn't a true ginger. ");
+  checkAnswer(["brown"],"Question4","message4","Congrats!!!!!","I remember the day I was crushed when I found out she wasn't a true ginger. ");
 }
 
 function samanthaFive()
 {
-  checkAnswer("one year","Question5","message5","Congrats!!!!!","This year she got it on time!!!");
+  checkAnswer(["one year","1 year", "a year", "year"],"Question5","message5","Congrats!!!!!","This year she got it on time!!!");
 }
 
 function sethOne()
 {
-  checkAnswer("baby ruth","Question1","message1","Congrats!!!!!!!!!","It is literraly the best candy bar ever, why you got this wrong?");
+  checkAnswer(["baby ruth", "baby ruth bar"],"Question1","message1","Congrats!!!!!!!!!","It is literraly the best candy bar ever, why you got this wrong?");
 }
 
 function sethTwo()
 {
-  checkAnswer("grapefruit","Question2","message2","Congrats!!!!!","Eh! There is better fruit out there. Seth have an okay taste.");
+  checkAnswer(["grapefruit","grapefruit"],"Question2","message2","Congrats!!!!!","Eh! There is better fruit out there. Seth have an okay taste.");
 }
 
 function sethThree()
 {
-  checkAnswer("twenty five","Question3","message3","Congrats!!!!!","Hint! More than anyone else in this group. or I am lying?");
+  checkAnswer(["twenty five","twenty four","twenty six", "twenty-five","twenty-four","twenty-six","25","24","26"],"Question3","message3","Congrats!!!!!","Hint! More than anyone else in this group. or I am lying?");
 }
 
 function sethFour()
 {
-  checkAnswer("40","Question4","message4","Congrats!!!!!","So many good horror movie, so little time. You should take a break and see one");
+  checkAnswer(["40","fourty"],"Question4","message4","Congrats!!!!!","So many good horror movie, so little time. You should take a break and see one");
 }
 
 function sethFive()
 {
-  checkAnswer("333","Question5","message5","Congrats!!!!!","Do you think he ever sleep? I think, he just constantly watching movies. While he works, sleep, exercise, it never stop");
+  checkAnswer(["333","three hundred thirty three","three hundred thirty-three","three hundred and thirty-three","three hundred and thirty three"],"Question5","message5","Congrats!!!!!","Do you think he ever sleep? I think, he just constantly watching movies. While he works, sleep, exercise, it never stop");
 }
 var t_r_answer = 0;
 
