@@ -31,9 +31,6 @@
 	display: None;
 	left: 48%;
 	position: absolute;
-    
-	
-
 }
 
 #Button_1 .button{
@@ -164,4 +161,12 @@
   text-align: center;
   color: #333333;
   font-size: x-large;
+}
+
+
+.wrong {
+
+border: 2px solid #AA88FF;
+background-color: red;
+
 }
