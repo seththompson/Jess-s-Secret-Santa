@@ -1,5 +1,3 @@
-var bevCounter = 0;
-
 var stringCheck = function checkString(string1,string2)
 {
   return (string1.toLowerCase()==string2.toLowerCase());
@@ -30,9 +28,16 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 }
 
-function checkHint()
+function checkHint(token)
 {
-  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5 || sessvars.justinCounter >= 5 || sessvars.mikeCounter >= 5 || sessvars.samanthaCounter >= 5)
+  if ((token == "seth" && sessvars.sethCounter >= 5) ||
+     (token == "adrian" && sessvars.adrianCounter >= 5) ||
+     (token == "bev" && sessvars.bevCounter >= 5) ||
+     (token == "chris" && sessvars.chrisCounter >= 5) ||
+     (token == "evan" && sessvars.evanCounter >= 5) ||
+     (token == "justin" && sessvars.justinCounter>= 5) ||
+     (token == "mike" && sessvars.mikeCounter>= 5) ||
+     (token == "samantha" && sessvars.samanthaCounter>= 5)) 
 		document.getElementById("Hint").style.display="block";
 }
 
@@ -44,7 +49,7 @@ function adrianOne()
     sessvars.adrianCounter++;
     sessvars.adrian1Flag = 1;
   }
-  checkHint();
+  checkHint('adrian');
 }
 
 function adrianTwo()
@@ -55,7 +60,7 @@ function adrianTwo()
     sessvars.adrianCounter++;
     sessvars.adrian2Flag = 1;
   }
-  checkHint();
+  checkHint('adrian');
 }
 
 function adrianThree()
@@ -66,7 +71,7 @@ function adrianThree()
     sessvars.adrianCounter++;
     sessvars.adrian3Flag = 1;
   }
-  checkHint();
+  checkHint('adrian');
 }
 
 function adrianFour()
@@ -77,7 +82,7 @@ function adrianFour()
     sessvars.adrianCounter++;
     sessvars.adrian4Flag = 1;
   }
-  checkHint();
+  checkHint('adrian');
 }
 
 function adrianFive()
@@ -88,7 +93,7 @@ function adrianFive()
     sessvars.adrianCounter++;
     sessvars5Flag = 1;
   }
-  checkHint();
+  checkHint('adrian');
 }
 
 
@@ -100,7 +105,7 @@ function bevOne()
     sessvars.bevCounter++;
     sessvars.bev1Flag = 1;
   }
-  checkHint();
+  checkHint('bev');
 }
 
 function bevTwo()
@@ -111,7 +116,7 @@ function bevTwo()
     sessvars.bevCounter++;
     sessvars.bev2Flag = 1;
   }
-  checkHint();
+  checkHint('bev');
 }
 
 function bevThree()
@@ -122,7 +127,7 @@ function bevThree()
     sessvars.bevCounter++;
     sessvars.bev3Flag = 1;
   }
-  checkHint();
+  checkHint('bev');
 }
 
 function bevFour()
@@ -133,7 +138,7 @@ function bevFour()
     sessvars.bevCounter++;
     sessvars.bev4Flag = 1;
   }
-  checkHint();
+  checkHint('bev');
 }
 
 function bevFive()
@@ -144,7 +149,7 @@ function bevFive()
     sessvars.bevCounter++;
     sessvars.bev5Flag = 1;
   }
-  checkHint();
+  checkHint('bev');
 }
 
 function chrisOne()
@@ -155,7 +160,7 @@ function chrisOne()
     sessvars.chrisCounter++;
     sessvars.chris1Flag = 1;
   }
-  checkHint();
+  checkHint('chris');
 }
 
 function chrisTwo()
@@ -166,7 +171,7 @@ function chrisTwo()
     sessvars.chrisCounter++;
     sessvars.chris2Flag = 1;
   }
-  checkHint();
+  checkHint('chris');
 }
 
 function chrisThree()
@@ -177,7 +182,7 @@ function chrisThree()
     sessvars.chrisCounter++;
     sessvars.chris3Flag = 1;
   }
-  checkHint();
+  checkHint('chris');
 }
 
 function chrisFour()
@@ -188,7 +193,7 @@ function chrisFour()
     sessvars.chrisCounter++;
     sessvars.chris4Flag = 1;
   }
-  checkHint();
+  checkHint('chris');
 }
 
 function chrisFive()
@@ -199,7 +204,7 @@ function chrisFive()
     sessvars.chrisCounter++;
     sessvars.chris5Flag = 1;
   }
-  checkHint();
+  checkHint('chris');
 }
 
 function evanOne()
@@ -210,7 +215,7 @@ function evanOne()
     sessvars.evanCounter++;
     sessvars.evan1Flag = 1;
   }
-  checkHint();
+  checkHint('evan');
 }
 
 function evanTwo()
@@ -221,7 +226,7 @@ function evanTwo()
     sessvars.evanCounter++;
     sessvars.evan2Flag = 1;
   }
-  checkHint();
+  checkHint('evan');
 }
 
 function evanThree()
@@ -232,7 +237,7 @@ function evanThree()
     sessvars.evanCounter++;
     sessvars.evan3Flag = 1;
   }
-  checkHint();
+  checkHint('evan');
 }
 
 function evanFour()
@@ -243,7 +248,7 @@ function evanFour()
     sessvars.evanCounter++;
     sessvars.evan4Flag = 1;
   }
-  checkHint();
+  checkHint('evan');
 }
 
 function evanFive()
@@ -254,7 +259,7 @@ function evanFive()
     sessvars.evanCounter++;
     sessvars.evan5Flag = 1;
   }
-  checkHint();
+  checkHint('evan');
 }
 
 function justinOne()
@@ -265,7 +270,7 @@ function justinOne()
     sessvars.justinCounter++;
     sessvars.justin1Flag = 1;
   }
-  checkHint();
+  checkHint('justin');
 }
 
 function justinTwo()
@@ -276,7 +281,7 @@ function justinTwo()
     sessvars.justinCounter++;
     sessvars.justin2Flag = 1;
   }
-  checkHint();
+  checkHint('justin');
 }
 
 function justinThree()
@@ -287,7 +292,7 @@ function justinThree()
     sessvars.justinCounter++;
     sessvars.justin3Flag = 1;
   }
-  checkHint();
+  checkHint('justin');
 }
 
 function justinFour()
@@ -298,7 +303,7 @@ function justinFour()
     sessvars.justinCounter++;
     sessvars.justin4Flag = 1;
   }
-  checkHint();
+  checkHint('justin');
 }
 
 function justinFive()
@@ -309,7 +314,7 @@ function justinFive()
     sessvars.justinCounter++;
     sessvars.justin5Flag = 1;
   }
-  checkHint();
+  checkHint('justin');
 }
 
 function mikeOne()
@@ -320,7 +325,7 @@ function mikeOne()
     sessvars.mikeCounter++;
     sessvars.mike1Flag = 1;
   }
-  checkHint();
+  checkHint('mike');
 }
 
 function mikeTwo()
@@ -331,7 +336,7 @@ function mikeTwo()
     sessvars.mikeCounter++;
     sessvars.mike2Flag = 1;
   }
-  checkHint();
+  checkHint('mike');
 }
 
 function mikeThree()
@@ -342,7 +347,7 @@ function mikeThree()
     sessvars.mikeCounter++;
     sessvars.mike3Flag = 1;
   }
-  checkHint();
+  checkHint('mike');
 }
 
 function mikeFour()
@@ -353,7 +358,7 @@ function mikeFour()
     sessvars.mikeCounter++;
     sessvars.mike4Flag = 1;
   }
-  checkHint();
+  checkHint('mike');
 }
 
 function mikeFive()
@@ -364,7 +369,7 @@ function mikeFive()
     sessvars.mikeCounter++;
     sessvars.mike5Flag = 1;
   }
-  checkHint();
+  checkHint('mike');
 }
 
 function samanthaOne()
@@ -375,7 +380,7 @@ function samanthaOne()
     sessvars.samanthaCounter++;
     sessvars.samantha1Flag = 1;
   }
-  checkHint();
+  checkHint('samantha');
 }
 
 function samanthaTwo()
@@ -386,7 +391,7 @@ function samanthaTwo()
     sessvars.samanthaCounter++;
     sessvars.samantha2Flag = 1;
   }
-  checkHint();
+  checkHint('samantha');
 }
 
 function samanthaThree()
@@ -397,7 +402,7 @@ function samanthaThree()
     sessvars.samanthaCounter++;
     sessvars.samantha3Flag = 1;
   }
-  checkHint();
+  checkHint('samantha');
 }
 
 function samanthaFour()
@@ -408,7 +413,7 @@ function samanthaFour()
     sessvars.samanthaCounter++;
     sessvars.samantha4Flag = 1;
   }
-  checkHint();
+  checkHint('samantha');
 }
 
 function samanthaFive()
@@ -419,37 +424,62 @@ function samanthaFive()
     sessvars.samanthaCounter++;
     sessvars.samantha5Flag = 1;
   }
-  checkHint();
+  checkHint('samantha');
 }
 
 function sethOne()
 {
   result = checkAnswer(["baby ruth", "baby ruth bar"],"Question1","message1","Congrats!!!!!!!!!","It is literraly the best candy bar ever, why you got this wrong?");
-  checkHint();
+  if (result == 1 && sessvars.seth1Flag == 0)
+  {
+    sessvars.sethCounter++;
+    sessvars.seth1Flag = 1;
+  }
+  checkHint("seth");
 }
 
 function sethTwo()
 {
   result = checkAnswer(["grapefruit","grapefruit"],"Question2","message2","Congrats!!!!!","Eh! There is better fruit out there. Seth have an okay taste.");
-  checkHint();
+  if (result == 1 && sessvars.seth2Flag == 0)
+  {
+    sessvars.sethCounter++;
+    sessvars.seth2Flag = 1;
+  }
+  checkHint("seth");
 }
 
 function sethThree()
 {
   result = checkAnswer(["twenty five","twenty four","twenty six", "twenty-five","twenty-four","twenty-six","25","24","26"],"Question3","message3","Congrats!!!!!","Hint! More than anyone else in this group. or I am lying?");
-  checkHint();
+  if (result == 1 && sessvars.seth3Flag == 0)
+  {
+    sessvars.sethCounter++;
+    sessvars.seth3Flag = 1;
+  }
+  checkHint("seth");
 }
 
 function sethFour()
 {
   result = checkAnswer(["40","fourty"],"Question4","message4","Congrats!!!!!","So many good horror movie, so little time. You should take a break and see one");
-  checkHint();
+  if (result == 1 && sessvars.seth4Flag == 0)
+  {
+    sessvars.sethCounter++;
+    sessvars.seth4Flag = 1;
+  }
+  checkHint("seth");
 }
 
 function sethFive()
 {
   result = checkAnswer(["333","three hundred thirty three","three hundred thirty-three","three hundred and thirty-three","three hundred and thirty three"],"Question5","message5","Congrats!!!!!","Do you think he ever sleep? I think, he just constantly watching movies. While he works, sleep, exercise, it never stop");
-  checkHint();
+  if (result == 1 && sessvars.seth5Flag == 0)
+  {
+    sessvars.sethCounter++;
+    sessvars.seth5Flag = 1;
+  }
+  checkHint("seth");
 }
 var t_r_answer = 0;
 
