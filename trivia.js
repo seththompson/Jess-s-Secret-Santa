@@ -1,3 +1,5 @@
+var adrianCounter = 0;
+
 var stringCheck = function checkString(string1,string2)
 {
   return (string1.toLowerCase()==string2.toLowerCase());
@@ -6,7 +8,7 @@ var stringCheck = function checkString(string1,string2)
 
 function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse)
 {
-  var answer, message,response;
+  var answer, message,response,returnValue;
   answer = document.getElementById(answerID).value;
   message = document.getElementById(messageID);
 	message.innerHTML = "";
@@ -14,40 +16,91 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
   if(correctAnswer.some(stringCheckPartial))                        // Returns true if any string in the array matches the answer var
   {
     response = correctResponse;
+    returnValue = 1;
     sessvars.correctCount++;
   }
   else
   {
     response = incorrectResponse;
+    returnValue = 0;
     sessvars.incorrectCount++;
   }
   message.innerHTML = response;
+  return returnValue;
 
+}
+
+function checkHint()
+{
+  if (adrianCounter == 5)
+  {
+		document.getElementById("Hint").style.display="block";
+  }
 }
 
 function adrianOne()
 {
-  checkAnswer(["jackie chan"],"Question1","message1","Congrats!!!!!","YOU SUCK!!!!!");
+  if (typeof adrianOne.flag === 'undefined')
+    adrianOne.flag = 0;
+  result=checkAnswer(["jackie chan"],"Question1","message1","Congrats!!!!!","YOU SUCK!!!!!");
+  if (result == 1 && adrianOne.flag == 0)
+  {
+    adrianCounter++;
+    adrianOne.flag = 1;
+  }
+  checkHint();
 }
 
 function adrianTwo()
 {
-  checkAnswer(["fabian"],"Question2","message2","Congrats!!!!!","YOU SUCK!!!!!");
+  if (typeof adrianTwo.flag === 'undefined')
+    adrianTwo.flag = 0;
+  result = checkAnswer(["fabian"],"Question2","message2","Congrats!!!!!","YOU SUCK!!!!!");
+  if (result == 1 && adrianTwo.flag == 0)
+  {
+    adrianCounter++;
+    adrianTwo.flag = 1;
+  }
+  checkHint();
 }
 
 function adrianThree()
 {
-  checkAnswer(["the ferrari","ferrari"],"Question3","message3","Congrats!!!!!","VROOM VROOM BITCH");
+  if (typeof adrianThree.flag === 'undefined')
+    adrianThree.flag = 0;
+  result = checkAnswer(["the ferrari","ferrari"],"Question3","message3","Congrats!!!!!","VROOM VROOM BITCH");
+  if (result == 1 && adrianThree.flag == 0)
+  {
+    adrianCounter++;
+    adrianThree.flag = 1;
+  }
+  checkHint();
 }
 
 function adrianFour()
 {
-  checkAnswer(["after earth","afterearth"],"Question4","message4","Congrats!!!!!","OPPOSITE OF BEFORE PLUTO (STILL A PLANET)");
+  if (typeof adrianFour.flag === 'undefined')
+    adrianFour.flag = 0;
+  result = checkAnswer(["after earth","afterearth"],"Question4","message4","Congrats!!!!!","OPPOSITE OF BEFORE PLUTO (STILL A PLANET)");
+  if (result == 1 && adrianFour.flag == 0)
+  {
+    adrianCounter++;
+    adrianFour.flag = 1;
+  }
+  checkHint();
 }
 
 function adrianFive()
 {
-  checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
+  if (typeof adrianFive.flag === 'undefined')
+    adrianFive.flag = 0;
+  result = checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
+  if (result == 1 && adrianFive.flag == 0)
+  {
+    adrianCounter++;
+    adrianFive.flag = 1;
+  }
+  checkHint();
 }
 
 
@@ -227,17 +280,17 @@ function sethFive()
 }
 var t_r_answer = 0;
 
-//function displayResult(){
+function displayResult(){
 	
 	message1 = document.getElementById("result");
 	message1.innerHTML = "";
-	message1.innerHTML = "Correct:" + " " + sessvars.correctCount;
+	message1.innerHTML = sessvars.correctCount;
 
 	message10 = document.getElementById("result2");
 	message10.innerHTML = "";
-	message10.innerHTML = "Incorrect:" + " " + sessvars.incorrectCount;
+	message10.innerHTML = sessvars.incorrectCount;
 
-//}
+}
 
 function myFunction() {
 
