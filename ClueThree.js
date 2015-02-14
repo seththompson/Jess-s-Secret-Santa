@@ -1,7 +1,8 @@
-function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse,buttonID,question)
+function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectResponse,buttonID,Question)
 {
   var answer, message,response;
   answer = document.getElementById(answerID).value;
+  Format = document.getElementById(Question);
   message = document.getElementById(messageID);
   button = document.getElementById(buttonID);
 	message.innerHTML = "";
@@ -10,16 +11,21 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
   {
     response = correctResponse;
 	button.style.display = "block";
-  }
-  else
+  }else
   {
-	$('question').addClass('flash');
     response = incorrectResponse;
+	
+		
+		$(Format).addClass("animated flash",10).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$(this).removeClass('animated flash')});
+	
+		
 	
   }
   message.innerHTML = response;
 
 }
+
+
 
 function MathQuestionOne()
 {
@@ -28,20 +34,20 @@ function MathQuestionOne()
 
 function MathQuestionTwo()
 {
-  checkAnswer("155","Answer_2","message_2","Congratulation you passed Geometry!!!!!","Well I bet a high school sophomore can do this","Button_2");
+  checkAnswer("155","Answer_2","message_2","Congratulation you passed Geometry!!!!!","Well I bet a high school sophomore can do this","Button_2","QuestionOne" );
 }
 
 function MathQuestionThree()
 {
-  checkAnswer("2","Answer_3","message_3","Congratulation you passed Calculus!!!!!","YOU CANT HANDLE THE TRUTH","Button_3");
+  checkAnswer("2","Answer_3","message_3","Congratulation you passed Calculus!!!!!","YOU CANT HANDLE THE TRUTH","Button_3", "QuestionOne");
 }
 
 function MathQuestionFour()
 {
-  checkAnswer("e","Answer_4","message_4","Congratulation you passed Calculus III!!!!!"," Your life is like a box of chocolates. Old, stale, bland chocolate.","Button_4");
+  checkAnswer("e","Answer_4","message_4","Congratulation you passed Calculus III!!!!!"," Your life is like a box of chocolates. Old, stale, bland chocolate.","Button_4", "QuestionOne");
 }
 
 function MathQuestionFive()
 {
-  checkAnswer("2sin(t)","Answer_5","message_5","Congratulation you passed Differential Equation!!!!!"," work work work work work ","Button_5");
+  checkAnswer("2sin(t)","Answer_5","message_5","Congratulation you passed Differential Equation!!!!!"," work work work work work ","Button_5","QuestionOne");
 }
