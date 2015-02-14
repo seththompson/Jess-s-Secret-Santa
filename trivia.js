@@ -32,7 +32,7 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function checkHint()
 {
-  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5)
+  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5)
 		document.getElementById("Hint").style.display="block";
 }
 
@@ -150,30 +150,55 @@ function bevFive()
 function chrisOne()
 {
   result = checkAnswer(["giraffe","a giraffe"],"Question1","message1","Congrats!!!!!","Come on! ITs obvious!");
+  if (result == 1 && sessvars.chris1Flag == 0)
+  {
+    sessvars.chrisCounter++;
+    sessvars.chris1Flag = 1;
+  }
   checkHint();
 }
 
 function chrisTwo()
 {
   result = checkAnswer(["walmart"],"Question2","message2","Congrats!!!!!","Only fine man buy steak from there!");
+  if (result == 1 && sessvars.chris2Flag == 0)
+  {
+    sessvars.chrisCounter++;
+    sessvars.chris2Flag = 1;
+  }
   checkHint();
 }
 
 function chrisThree()
 {
   result = checkAnswer(["fender san marino","a fender san marino", "fender", "a fender"],"Question3","message3","Congrats!!!!!","Good luck! ");
+  if (result == 1 && sessvars.chris3Flag == 0)
+  {
+    sessvars.chrisCounter++;
+    sessvars.chris3Flag = 1;
+  }
   checkHint();
 }
 
 function chrisFour()
 {
   result = checkAnswer(["four","4"],"Question4","message4","Congrats!!!!!","Too bad you didn't attend!");
+  if (result == 1 && sessvars.chris4Flag == 0)
+  {
+    sessvars.chrisCounter++;
+    sessvars.chris4Flag = 1;
+  }
   checkHint();
 }
 
 function chrisFive()
 {
   result = checkAnswer(["jennifer lawrence","jlaw","j law",],"Question5","message5","Congrats!!!!!","bau chica wau wau");
+  if (result == 1 && sessvars.chris5Flag == 0)
+  {
+    sessvars.chrisCounter++;
+    sessvars.chris5Flag = 1;
+  }
   checkHint();
 }
 
