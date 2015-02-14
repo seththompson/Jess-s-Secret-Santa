@@ -118,6 +118,36 @@
 		color: #ff7a85;
 		margin: 0 20px 0 0;
 	}
+
+.badfriend {
+		font: 50px "Dosis", sans-serif; 
+		text-transform: uppercase; 
+		position: absolute; 
+		left: 28px;
+		top: 650px;
+		color: #D9411E;
+		margin: 0 20px 0 0;
+	}
+	
+.goodfriend{
+		font: 50px "Dosis", sans-serif; 
+		text-transform: uppercase; 
+		position: absolute; 
+		left: 28px;
+		top: 650px;
+		color: green;
+		margin: 0 20px 0 0;
+	}
+	
+.okayfriend {
+		font: 50px "Dosis", sans-serif; 
+		text-transform: uppercase; 
+		position: absolute; 
+		left: 28px;
+		top: 650px;
+		color: yellow;
+		margin: 0 20px 0 0;
+	}
 	
 
 #Rules {
@@ -171,7 +201,6 @@
 }
 
 
-
 #ClueTwo  {
 	border: 1px solid #B6B6B6;
 	border-radius: 5px;
@@ -179,7 +208,7 @@
 	margin: 3%;
 	position: absolute; 
 	left: 28px;
-	top: 600px;
+	top: 725px;
 	display: None;
 	
 }
