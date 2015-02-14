@@ -94,7 +94,9 @@ function adrianFive()
 {
   if (typeof adrianFive.flag === 'undefined')
     adrianFive.flag = 0;
+	
   result = checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
+  
   if (result == 1 && adrianFive.flag == 0)
   {
     adrianCounter++;
@@ -280,17 +282,17 @@ function sethFive()
 }
 var t_r_answer = 0;
 
-function displayResult(){
+
 	
 	message1 = document.getElementById("result");
 	message1.innerHTML = "";
-	message1.innerHTML = sessvars.correctCount;
+	message1.innerHTML ="Correct" + " " + sessvars.correctCount;
 
 	message10 = document.getElementById("result2");
 	message10.innerHTML = "";
-	message10.innerHTML = sessvars.incorrectCount;
+	message10.innerHTML = "Incorrect" + " " +sessvars.incorrectCount;
 
-}
+
 
 function myFunction() {
 
