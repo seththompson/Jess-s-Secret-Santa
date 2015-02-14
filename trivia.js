@@ -32,7 +32,7 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function checkHint()
 {
-  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5 || sessvars.justinCounter >= 5)
+  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5 || sessvars.justinCounter >= 5 || sessvars.mikeCounter >= 5)
 		document.getElementById("Hint").style.display="block";
 }
 
@@ -315,30 +315,55 @@ function justinFive()
 function mikeOne()
 {
   result = checkAnswer(["carrot cake"],"Question1","message1","Congrats!!!!!!!!!","We should tell Samantha to make bananna cake!");
+  if (result == 1 && sessvars.mike1Flag == 0)
+  {
+    sessvars.mikeCounter++;
+    sessvars.mike1Flag = 1;
+  }
   checkHint();
 }
 
 function mikeTwo()
 {
   result = checkAnswer(["woodhollow","wood hollow"],"Question2","message2","Congrats!!!!!","Apparently he actually lived in a apartment complex.");
+  if (result == 1 && sessvars.mike2Flag == 0)
+  {
+    sessvars.mikeCounter++;
+    sessvars.mike2Flag = 1;
+  }
   checkHint();
 }
 
 function mikeThree()
 {
   result = checkAnswer(["wendy","wendys","wendy's"],"Question3","message3","Congrats!!!!!","They will get marry one day!");
+  if (result == 1 && sessvars.mike3Flag == 0)
+  {
+    sessvars.mikeCounter++;
+    sessvars.mike3Flag = 1;
+  }
   checkHint();
 }
 
 function mikeFour()
 {
   result = checkAnswer(["bloody rabbit","a bloody rabbit","rabbit from monty python and the holy grail", "the rabbit from monty python and the holy grail"],"Question4","message4","Congrats!!!!!","This was hilarious!");
+  if (result == 1 && sessvars.mike4Flag == 0)
+  {
+    sessvars.mikeCounter++;
+    sessvars.mike4Flag = 1;
+  }
   checkHint();
 }
 
 function mikeFive()
 {
   result = checkAnswer(["kicker of elves"],"Question5","message5","Congrats!!!!!","Yikes! Another hard question");
+  if (result == 1 && sessvars.mike5Flag == 0)
+  {
+    sessvars.mikeCounter++;
+    sessvars.mike5Flag = 1;
+  }
   checkHint();
 }
 
