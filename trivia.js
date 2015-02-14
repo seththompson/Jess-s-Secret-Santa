@@ -112,7 +112,7 @@ function bevOne()
 
 function bevTwo()
 {
-  result = checkAnswer(["super bowl","the super bowl"],"Question2","message2","Congrats!!!!!","HOW CAN YOU FORGET! You are Camilla Godfather!!",sessvars.bev2Flag);
+  result = checkAnswer(["super bowl","the super bowl","superbowl","the superbowl"],"Question2","message2","Congrats!!!!!","HOW CAN YOU FORGET! You are Camilla Godfather!!",sessvars.bev2Flag);
   if (result == 1 && sessvars.bev2Flag == 0)
   {
     sessvars.bevCounter++;
@@ -299,7 +299,7 @@ function justinThree()
 
 function justinFour()
 {
-  result = checkAnswer(["u"],"Question4","message4","Congrats!!!!!","I think the books is about wizards and dragon. I am like 3% sure. Trust me this is a good hint.",sessvars.justin4Flag);
+  result = checkAnswer(["the name of the wind","name of the wind"],"Question4","message4","Congrats!!!!!","I think the books is about wizards and dragon. I am like 3% sure. Trust me this is a good hint.",sessvars.justin4Flag);
   if (result == 1 && sessvars.justin4Flag == 0)
   {
     sessvars.justinCounter++;
@@ -310,7 +310,7 @@ function justinFour()
 
 function justinFive()
 {
-  result = checkAnswer(["u"],"Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?",sessvars.justin5Flag);
+  result = checkAnswer(["max","maxine"],"Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?",sessvars.justin5Flag);
   if (result == 1 && sessvars.justin5Flag == 0)
   {
     sessvars.justinCounter++;
