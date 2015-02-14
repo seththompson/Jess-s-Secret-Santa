@@ -32,7 +32,7 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function checkHint()
 {
-  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5)
+  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5)
 		document.getElementById("Hint").style.display="block";
 }
 
@@ -205,30 +205,55 @@ function chrisFive()
 function evanOne()
 {
   result = checkAnswer(["arabella"],"Question1","message1","Congrats!!!!!!!!!","Come on Matt, what cat name I am thinking?");
+  if (result == 1 && sessvars.evan1Flag == 0)
+  {
+    sessvars.evanCounter++;
+    sessvars.evan1Flag = 1;
+  }
   checkHint();
 }
 
 function evanTwo()
 {
   result = checkAnswer(["one","1"],"Question2","message2","Congrats!!!!!","Wait isn't he a bass player?");
+  if (result == 1 && sessvars.evan2Flag == 0)
+  {
+    sessvars.evanCounter++;
+    sessvars.evan2Flag = 1;
+  }
   checkHint();
 }
 
 function evanThree()
 {
   result = checkAnswer(["twenty three november","Nov 23","Nov 23rd", "November 23", "November 23rd", "23 Nov", "23 November","twenty-third Nov", "twenty third November","twenty-three november","twenty-three Nov","twenty three nov","11/23","11-23"],"Question3","message3","Congrats!!!!!","If he only was a girl, he wouldn't gotten that ticket");
+  if (result == 1 && sessvars.evan3Flag == 0)
+  {
+    sessvars.evanCounter++;
+    sessvars.evan3Flag = 1;
+  }
   checkHint();
 }
 
 function evanFour()
 {
   result = checkAnswer(["803","eight hundred and three","eight hundred three"],"Question4","message4","Congrats!!!!!","You are so close!!!!");
+  if (result == 1 && sessvars.evan4Flag == 0)
+  {
+    sessvars.evanCounter++;
+    sessvars.evan4Flag = 1;
+  }
   checkHint();
 }
 
 function evanFive()
 {
   result = checkAnswer(["1000","one thousand","a thousand","thousand","one-thousand"],"Question5","message5","Congrats!!!!!","This is embarrassing");
+  if (result == 1 && sessvars.evan5Flag == 0)
+  {
+    sessvars.evanCounter++;
+    sessvars.evan5Flag = 1;
+  }
   checkHint();
 }
 
