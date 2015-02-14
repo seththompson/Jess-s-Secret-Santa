@@ -11,6 +11,8 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
   {
     response = correctResponse;
 	button.style.display = "block";
+	$(Format).addClass("wrong");
+	
   }else
   {
     response = incorrectResponse;
