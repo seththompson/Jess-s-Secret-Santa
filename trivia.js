@@ -502,6 +502,7 @@ var t_r_answer = 0;
 	message20.innerHTML = "";
 	format = document.getElementById("friend");
 	
+	
 	if(sessvars.incorrectCount < 5){
 	
 		$(format).addClass("goodfriend");
@@ -538,7 +539,7 @@ var t_r_answer = 0;
 		$(format).addClass("okayfriend")
 		message20.innerHTML = "NEUTRAL FRIEND";
 	}else if (sessvars.incorrectCount < 70){
-
+	
 		$(format).addClass("okayfriend")
 		message20.innerHTML = "ACQUAINTANCE? Friend? I AM NOT SURE ANYMORE";
 	}else if (sessvars.incorrectCount < 80){
@@ -556,7 +557,7 @@ var t_r_answer = 0;
 	}else if (sessvars.incorrectCount < 150){
 
 		$(format).addClass("badfriend")
-		message20.innerHTML = "I THOUGHT YOU KNEW US;
+		message20.innerHTML = "I THOUGHT YOU KNEW US";
 	}else if (sessvars.incorrectCount > 150){
 
 		$(format).addClass("badfriend")
