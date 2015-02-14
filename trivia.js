@@ -1,4 +1,4 @@
-var adrianCounter = 0;
+var bevCounter = 0;
 
 var stringCheck = function checkString(string1,string2)
 {
@@ -32,73 +32,61 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function checkHint()
 {
-  if (adrianCounter == 5)
-  {
+  if (sessvars.adrianCounter >= 5 || bevCounter == 5)
 		document.getElementById("Hint").style.display="block";
-  }
 }
 
 function adrianOne()
 {
-  if (typeof adrianOne.flag === 'undefined')
-    adrianOne.flag = 0;
   result=checkAnswer(["jackie chan"],"Question1","message1","Congrats!!!!!","YOU SUCK!!!!!");
-  if (result == 1 && adrianOne.flag == 0)
+  if (result == 1 && sessvars.adrian1Flag == 0)
   {
-    adrianCounter++;
-    adrianOne.flag = 1;
+    sessvars.adrianCounter++;
+    sessvars.adrian1Flag = 1;
   }
   checkHint();
 }
 
 function adrianTwo()
 {
-  if (typeof adrianTwo.flag === 'undefined')
-    adrianTwo.flag = 0;
   result = checkAnswer(["fabian"],"Question2","message2","Congrats!!!!!","YOU SUCK!!!!!");
-  if (result == 1 && adrianTwo.flag == 0)
+  if (result == 1 && sessvars.adrian2Flag == 0)
   {
-    adrianCounter++;
-    adrianTwo.flag = 1;
+    sessvars.adrianCounter++;
+    sessvars.adrian2Flag = 1;
   }
   checkHint();
 }
 
 function adrianThree()
 {
-  if (typeof adrianThree.flag === 'undefined')
-    adrianThree.flag = 0;
   result = checkAnswer(["the ferrari","ferrari"],"Question3","message3","Congrats!!!!!","VROOM VROOM BITCH");
-  if (result == 1 && adrianThree.flag == 0)
+  if (result == 1 && sessvars.adrian3Flag == 0)
   {
-    adrianCounter++;
-    adrianThree.flag = 1;
+    sessvars.adrianCounter++;
+    sessvars.adrian3Flag = 1;
   }
   checkHint();
 }
 
 function adrianFour()
 {
-  if (typeof adrianFour.flag === 'undefined')
-    adrianFour.flag = 0;
   result = checkAnswer(["after earth","afterearth"],"Question4","message4","Congrats!!!!!","OPPOSITE OF BEFORE PLUTO (STILL A PLANET)");
-  if (result == 1 && adrianFour.flag == 0)
+  if (result == 1 && sessvars.adrian4Flag == 0)
   {
-    adrianCounter++;
-    adrianFour.flag = 1;
+    sessvars.adrianCounter++;
+    sessvars.adrian4Flag = 1;
   }
   checkHint();
 }
 
 function adrianFive()
 {
-  if (typeof adrianFive.flag === 'undefined')
-    adrianFive.flag = 0;
   result = checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA");
-  if (result == 1 && adrianFive.flag == 0)
+  if (result == 1 && sessvars.adrian5Flag == 0)
   {
-    adrianCounter++;
-    adrianFive.flag = 1;
+    sessvars.adrianCounter++;
+    sessvars5Flag = 1;
   }
   checkHint();
 }
@@ -106,16 +94,22 @@ function adrianFive()
 
 function bevOne()
 {
+  if (typeof bevOne.flag === 'undefined')
+    bevOne.flag = 0;
   checkAnswer(["wales"],"Question1","message1","Congrats!!!!!","YOU GOT IT RIGHT! Nah, I am joking is wrong");
 }
 
 function bevTwo()
 {
+  if (typeof bevTwo.flag === 'undefined')
+    bevTwo.flag = 0;
   checkAnswer(["super bowl","the super bowl"],"Question2","message2","Congrats!!!!!","HOW CAN YOU FORGET! You are Camilla Godfather!!");
 }
 
 function bevThree()
 {
+  if (typeof bevTwo.flag === 'undefined')
+    bevTwo.flag = 0;
   checkAnswer(["beast"],"Question3","message3","Congrats!!!!!","I am surprised you got this wrong. You should be calling her that. Its that good.");
 }
 
