@@ -51,5 +51,5 @@ function MathQuestionFour()
 
 function MathQuestionFive()
 {
-  checkAnswer("2sin(t)","Answer_5","message_5","Congratulation you passed Differential Equation!!!!!"," work work work work work ","Button_5","QuestionOne");
+  checkAnswer("2sin(t)","Answer_5","message_5","Congratulation you passed Differential Equation!!!!!"," Try x = 2 ","Button_5","QuestionOne");
 }
