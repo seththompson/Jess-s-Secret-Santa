@@ -32,7 +32,7 @@ function checkAnswer(correctAnswer,answerID,messageID,correctResponse,incorrectR
 
 function checkHint()
 {
-  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5)
+  if (sessvars.adrianCounter >= 5 || sessvars.bevCounter >= 5 || sessvars.chrisCounter >= 5 || sessvars.evanCounter >= 5 || sessvars.justinCounter >= 5)
 		document.getElementById("Hint").style.display="block";
 }
 
@@ -260,30 +260,55 @@ function evanFive()
 function justinOne()
 {
   result = checkAnswer(["restaurant","a restaurant"],"Question1","message1","Congrats!!!!!!!!!","WRONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGg");
+  if (result == 1 && sessvars.justin1Flag == 0)
+  {
+    sessvars.justinCounter++;
+    sessvars.justin1Flag = 1;
+  }
   checkHint();
 }
 
 function justinTwo()
 {
   result = checkAnswer(["three","3"],"Question2","message2","Congrats!!!!!","Oh! The many groupme messages.");
+  if (result == 1 && sessvars.justin2Flag == 0)
+  {
+    sessvars.justinCounter++;
+    sessvars.justin2Flag = 1;
+  }
   checkHint();
 }
 
 function justinThree()
 {
   result = checkAnswer(["alabama","state of alabama","the state of alabama"],"Question3","message3","Congrats!!!!!","You know what, I don't know what state Justin love. Wiscosine?");
+  if (result == 1 && sessvars.justin3Flag == 0)
+  {
+    sessvars.justinCounter++;
+    sessvars.justin3Flag = 1;
+  }
   checkHint();
 }
 
 function justinFour()
 {
   result = checkAnswer(["u"],"Question4","message4","Congrats!!!!!","I think the books is about wizards and dragon. I am like 3% sure. Trust me this is a good hint.");
+  if (result == 1 && sessvars.justin4Flag == 0)
+  {
+    sessvars.justinCounter++;
+    sessvars.justin4Flag = 1;
+  }
   checkHint();
 }
 
 function justinFive()
 {
   result = checkAnswer(["u"],"Question5","message5","Congrats!!!!!","She is a cute dog. Wait he is a cute dog. No. She? He?");
+  if (result == 1 && sessvars.justin5Flag == 0)
+  {
+    sessvars.justinCounter++;
+    sessvars.justin5Flag = 1;
+  }
   checkHint();
 }
 
