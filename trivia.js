@@ -502,7 +502,17 @@ var t_r_answer = 0;
 	message20.innerHTML = "";
 	format = document.getElementById("friend");
 	
+	message20 = document.getElementById("friend");
+	message20.innerHTML = "";
 	
+	format = document.getElementById("friend");
+	hint = document.getElementById("ClueTwo");
+	
+	if(sessvars.correctCount == 40){
+	
+		hint.style.display = "block";
+	
+	}
 	if(sessvars.incorrectCount < 5){
 	
 		$(format).addClass("goodfriend");
