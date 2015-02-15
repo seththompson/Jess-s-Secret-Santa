@@ -91,7 +91,7 @@ function adrianFour()
 
 function adrianFive()
 {
-  result = checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","HAHAHAHAHAHHAHAHA",sessvars.adrian5Flag);
+  result = checkAnswer(["infrastructure engineering"],"Question5","message5","Congrats!!!!!","Why don't you follow him to work, Matt?",sessvars.adrian5Flag);
   if (result == 1 && sessvars.adrian5Flag == 0)
   {
     sessvars.adrianCounter++;
@@ -159,7 +159,7 @@ function bevFive()
 
 function chrisOne()
 {
-  result = checkAnswer(["giraffe","a giraffe"],"Question1","message1","Congrats!!!!!","Come on! ITs obvious!",sessvars.chris1Flag);
+  result = checkAnswer(["giraffe","a giraffe","cat","a cat"],"Question1","message1","Congrats!!!!!","Come on! ITs obvious!",sessvars.chris1Flag);
   if (result == 1 && sessvars.chris1Flag == 0)
   {
     sessvars.chrisCounter++;
@@ -225,7 +225,7 @@ function evanOne()
 
 function evanTwo()
 {
-  result = checkAnswer(["one","1"],"Question2","message2","Congrats!!!!!","Wait isn't he a bass player?",sessvars.evan2Flag);
+  result = checkAnswer(["one","1","2","two"],"Question2","message2","Congrats!!!!!","Wait isn't he a bass player?",sessvars.evan2Flag);
   if (result == 1 && sessvars.evan2Flag == 0)
   {
     sessvars.evanCounter++;
@@ -357,7 +357,7 @@ function mikeThree()
 
 function mikeFour()
 {
-  result = checkAnswer(["bloody rabbit","a bloody rabbit","rabbit from monty python and the holy grail", "the rabbit from monty python and the holy grail"],"Question4","message4","Congrats!!!!!","This was hilarious!",sessvars.mike4Flag);
+  result = checkAnswer(["killer rabbit","bloody rabbit","a bloody rabbit","rabbit from monty python and the holy grail", "the rabbit from monty python and the holy grail"],"Question4","message4","Congrats!!!!!","This was hilarious!",sessvars.mike4Flag);
   if (result == 1 && sessvars.mike4Flag == 0)
   {
     sessvars.mikeCounter++;
@@ -368,7 +368,7 @@ function mikeFour()
 
 function mikeFive()
 {
-  result = checkAnswer(["kicker of elves"],"Question5","message5","Congrats!!!!!","Yikes! Another hard question",sessvars.mike5Flag);
+  result = checkAnswer(["kicker of elves"],"Question5","message5","Congrats!!!!!","Hey I'll be nice and give you a really good hint: It's not The Goldheart Mountaintop Queen Directory. Oh and it's between 1 min and 2 mins long.  LOLOLOL",sessvars.mike5Flag);
   if (result == 1 && sessvars.mike5Flag == 0)
   {
     sessvars.mikeCounter++;
@@ -390,7 +390,7 @@ function samanthaOne()
 
 function samanthaTwo()
 {
-  result = checkAnswer(["cheese carbs hotdog","cheese hotdog carbs","hotdog cheese carbs","hotdog carbs cheese","carbs cheese hotdog","carbs hotdog cheese","cheese, carbs, hotdog","cheese, hotdog, carbs","hotdog, cheese, carbs","hotdog, carbs, cheese","carbs, cheese, hotdog","carbs, hotdog, cheese","cheese carbs hotdogs","cheese hotdogs carbs","hotdogs cheese carbs","hotdogs carbs cheese","carbs cheese hotdogs","carbs hotdogs cheese","cheese, carbs, hotdogs","cheese, hotdogs, carbs","hotdogs, cheese, carbs","hotdogs, carbs, cheese","carbs, cheese, hotdogs","carbs, hotdogs, cheese"],"Question2","message2","Congrats!!!!!","I will admit this one is hard",sessvars.samantha2Flag);
+  result = checkAnswer(["cheese carbs hotdog","cheese hotdog carbs","hotdog cheese carbs","hotdog carbs cheese","carbs cheese hotdog","carbs hotdog cheese","cheese, carbs, hotdog","cheese, hotdog, carbs","hotdog, cheese, carbs","hotdog, carbs, cheese","carbs, cheese, hotdog","carbs, hotdog, cheese","cheese carbs hotdogs","cheese hotdogs carbs","hotdogs cheese carbs","hotdogs carbs cheese","carbs cheese hotdogs","carbs hotdogs cheese","cheese, carbs, hotdogs","cheese, hotdogs, carbs","hotdogs, cheese, carbs","hotdogs, carbs, cheese","carbs, cheese, hotdogs","carbs, hotdogs, cheese"],"Question2","message2","Congrats!!!!!","c _ _ _ _ _ c _ _ _ _ h _ _ _ _ _ (s) - I'm soooo generous",sessvars.samantha2Flag);
   if (result == 1 && sessvars.samantha2Flag == 0)
   {
     sessvars.samanthaCounter++;
@@ -434,7 +434,7 @@ function samanthaFive()
 
 function sethOne()
 {
-  result = checkAnswer(["baby ruth", "baby ruth bar"],"Question1","message1","Congrats!!!!!!!!!","It is literraly the best candy bar ever, why you got this wrong?",sessvars.seth1Flag);
+  result = checkAnswer(["baby ruth", "baby ruth bar"],"Question1","message1","Congrats!!!!!!!!!","Here's another key hint: it's a candy bar",sessvars.seth1Flag);
   if (result == 1 && sessvars.seth1Flag == 0)
   {
     sessvars.sethCounter++;
@@ -467,7 +467,7 @@ function sethThree()
 
 function sethFour()
 {
-  result = checkAnswer(["40","fourty"],"Question4","message4","Congrats!!!!!","So many good horror movie, so little time. You should take a break and see one",sessvars.seth4Flag);
+  result = checkAnswer(["40","fourty"],"Question4","message4","Congrats!!!!!","Hint: it's between 0 and 400",sessvars.seth4Flag);
   if (result == 1 && sessvars.seth4Flag == 0)
   {
     sessvars.sethCounter++;
@@ -478,12 +478,44 @@ function sethFour()
 
 function sethFive()
 {
-  result = checkAnswer(["333","three hundred thirty three","three hundred thirty-three","three hundred and thirty-three","three hundred and thirty three"],"Question5","message5","Congrats!!!!!","Do you think he ever sleep? I think, he just constantly watching movies. While he works, sleep, exercise, it never stop",sessvars.seth5Flag);
-  if (result == 1 && sessvars.seth5Flag == 0)
+  //result = checkAnswer(["333","three hundred thirty three","three hundred thirty-three","three hundred and thirty-three","three hundred and thirty three"],"Question5","message5","Congrats!!!!!","Do you think he ever sleep? I think, he just constantly watching movies. While he works, sleep, exercise, it never stop",sessvars.seth5Flag);
+  var answer, message,response,returnValue;
+  answer = document.getElementById("Question5").value;
+  message = document.getElementById("message5");
+	message.innerHTML = "";
+  var stringCheckPartial = stringCheck.bind(undefined,answer);      // Create a partial function that will take in a string and compare it to the answer variable
+  if(["333","three hundred thirty three","three hundred thirty-three","three hundred and thirty-three","three hundred and thirty three"].some(stringCheckPartial))                        // Returns true if any string in the array matches the answer var
+  {
+    response = "Congrats Matt";
+    returnValue = 1;
+    if(sessvars.seth5Flag == 0)
+      sessvars.correctCount++;
+  }
+  else if(Number(answer) > 400)
+  {
+    response = "Too Low!"
+    returnValue = 0;
+    sessvars.incorrectCount++;
+  }
+  else if(Number(answer) < 300)
+  {
+    response = "Too High!"
+    returnValue = 0;
+    sessvars.incorrectCount++;
+  }
+  else
+  {
+    response = "You getting STRESSED?";
+    returnValue = 0;
+    sessvars.incorrectCount++;
+  }
+
+  if (returnValue == 1 && sessvars.seth5Flag == 0)
   {
     sessvars.sethCounter++;
     sessvars.seth5Flag = 1;
   }
+  message.innerHTML = response;
   checkHint("seth");
 }
 var t_r_answer = 0;
