@@ -335,7 +335,7 @@ function mikeOne()
 
 function mikeTwo()
 {
-  result = checkAnswer(["22","twenty-two","twenty two"],"Question2","message2","Congrats!!!!!","HAHAHA, really, you thought it'd be that easy?",sessvars.mike2Flag);
+  result = checkAnswer(["22","twenty-two","twenty two"],"Question2","message2","Congrats!!!!!","HAHAHAHA, really, you thought it'd be that easy?",sessvars.mike2Flag);
   if (result == 1 && sessvars.mike2Flag == 0)
   {
     sessvars.mikeCounter++;
