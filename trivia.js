@@ -456,7 +456,7 @@ function sethTwo()
 
 function sethThree()
 {
-  result = checkAnswer(["twenty five","twenty four","twenty six", "twenty-five","twenty-four","twenty-six","25","24","26"],"Question3","message3","Congrats!!!!!","Hint! More than anyone else in this group. or I am lying?",sessvars.seth3Flag);
+  result = checkAnswer(["4","four"],"Question3","message3","Congrats!!!!!","Hint! More than anyone else in this group. or I am lying?",sessvars.seth3Flag);
   if (result == 1 && sessvars.seth3Flag == 0)
   {
     sessvars.sethCounter++;
