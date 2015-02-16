@@ -335,7 +335,7 @@ function mikeOne()
 
 function mikeTwo()
 {
-  result = checkAnswer(["timber point","timberpoint"],"Question2","message2","Congrats!!!!! (Sorry Evan!)","Nope! we will accept cardboard box, but you have to give coordinates",sessvars.mike2Flag);
+  result = checkAnswer(["timber point","timberpoint"],"Question2","message2","Congrats!!!!! (Sorry Evan!)","Nope! We don't actually want coordinates you blockhead",sessvars.mike2Flag);
   if (result == 1 && sessvars.mike2Flag == 0)
   {
     sessvars.mikeCounter++;
